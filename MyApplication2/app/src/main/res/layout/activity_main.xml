@@ -7,82 +7,151 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tcaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:capitalize="none"
+        android:clickable="true"
+        android:text="www.w3schools.com"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="@+id/t7"
+        tools:layout_editor_absoluteY="593dp" />
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.Convertir urls en links clickeables"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/t5"
+        tools:layout_editor_absoluteY="498dp" />
+
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7. Convertit a mayúsculas"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/t6"
+        tools:layout_editor_absoluteY="564dp" />
+
+    <TextView
+        android:id="@+id/tfonmono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="Tipo de fuente monospace"
+        app:layout_constraintStart_toStartOf="@+id/tfonserf"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <TextView
+        android:id="@+id/tfonserf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Tipo de fuente serif"
+        app:layout_constraintStart_toStartOf="@+id/tfonsan"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
         android:id="@+id/t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:text="4. Cambiar estilo de fuente"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintBottom_toTopOf="@+id/stnorm"
+        app:layout_constraintStart_toStartOf="@+id/t3"
+        app:layout_constraintTop_toBottomOf="@+id/tv24size" />
 
     <TextView
         android:id="@+id/stboldItalic"
-        android:layout_width="156dp"
-        android:layout_height="21dp"
+        android:layout_width="165dp"
+        android:layout_height="22dp"
         android:text="Estilo en negrilla e itálico"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintStart_toStartOf="@+id/stital"
+        tools:layout_editor_absoluteY="361dp" />
 
     <TextView
         android:id="@+id/stital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
         android:text="Estilo itálico"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintBottom_toTopOf="@+id/t5"
+        app:layout_constraintStart_toStartOf="@+id/stbold"
+        app:layout_constraintTop_toBottomOf="@+id/stbold" />
 
     <TextView
         android:id="@+id/stbold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:text="Estilo en negrilla"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintBottom_toTopOf="@+id/stital"
+        app:layout_constraintStart_toStartOf="@+id/stnorm"
+        app:layout_constraintTop_toBottomOf="@+id/stnorm" />
 
     <TextView
         android:id="@+id/t1"
-        android:layout_width="123dp"
-        android:layout_height="25dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="1. TextView"
         android:textColor="#040303"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nya"
+        app:layout_constraintEnd_toEndOf="@+id/t3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/nya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="12dp"
         android:text="Nombre y Apellidos"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="41dp" />
+        app:layout_constraintBottom_toTopOf="@+id/t2"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
 
     <TextView
         android:id="@+id/t2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="2. Cambiar Color"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="72dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nya" />
 
     <TextView
         android:id="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="texto color Material Indigo 500"
         android:textColor="#3F51B5"
         android:textColorHighlight="#B53F68"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="94dp" />
+        app:layout_constraintBottom_toTopOf="@+id/t3"
+        app:layout_constraintStart_toStartOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
 
     <TextView
         android:id="@+id/t3"
@@ -92,18 +161,21 @@
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="123dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv12size"
+        app:layout_constraintStart_toStartOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
 
     <TextView
         android:id="@+id/tv24size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:layout_marginBottom="27dp"
         android:text="TextView24sp"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/t"
         app:layout_constraintStart_toStartOf="@+id/tv20size"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tv20size" />
 
     <TextView
         android:id="@+id/tv16size"
@@ -112,8 +184,9 @@
         android:layout_marginStart="4dp"
         android:text="TextView16sp"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv20size"
         app:layout_constraintStart_toStartOf="@+id/tv12size"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tv12size" />
 
     <TextView
         android:id="@+id/tv12size"
@@ -122,8 +195,9 @@
         android:layout_marginStart="4dp"
         android:text="TextView12sp"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv16size"
         app:layout_constraintStart_toStartOf="@+id/t3"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintTop_toBottomOf="@+id/t3" />
 
     <TextView
         android:id="@+id/tv20size"
@@ -132,8 +206,9 @@
         android:layout_marginStart="4dp"
         android:text="TextView20sp"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv24size"
         app:layout_constraintStart_toStartOf="@+id/tv16size"
-        tools:layout_editor_absoluteY="183dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tv16size" />
 
     <TextView
         android:id="@+id/t5"
@@ -143,15 +218,34 @@
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintStart_toStartOf="@+id/t"
+        tools:layout_editor_absoluteY="406dp" />
 
     <TextView
         android:id="@+id/stnorm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Estilo normal"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="303dp" />
+        app:layout_constraintBottom_toTopOf="@+id/stbold"
+        app:layout_constraintStart_toStartOf="@+id/t"
+        app:layout_constraintTop_toBottomOf="@+id/t" />
+
+    <TextView
+        android:id="@+id/tfonsan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Tipo de fuente sans"
+        app:layout_constraintStart_toStartOf="@+id/t5"
+        tools:layout_editor_absoluteY="428dp" />
+
+    <TextView
+        android:id="@+id/tlkclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="https://www.w3schools.com"
+        app:layout_constraintStart_toStartOf="@+id/t6"
+        tools:layout_editor_absoluteY="527dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
