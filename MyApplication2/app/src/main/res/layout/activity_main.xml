@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stboldItalic"
+        android:layout_width="156dp"
+        android:layout_height="21dp"
+        android:text="Estilo en negrilla e itálico"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <TextView
+        android:id="@+id/stital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estilo itálico"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <TextView
+        android:id="@+id/stbold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estilo en negrilla"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:text="1. TextView"
+        android:textColor="#040303"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/nya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre y Apellidos"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Cambiar Color"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texto color Material Indigo 500"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#B53F68"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Cambiar tamaño"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <TextView
+        android:id="@+id/tv24size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView24sp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tv20size"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/tv16size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView16sp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv12size"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/tv12size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView12sp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/t3"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <TextView
+        android:id="@+id/tv20size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView20sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv16size"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Cambiar estilo de fuente"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:id="@+id/stnorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estilo normal"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
