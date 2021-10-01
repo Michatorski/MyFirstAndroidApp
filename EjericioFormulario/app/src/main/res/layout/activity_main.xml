@@ -22,8 +22,28 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/etNombre"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tp"
+        app:layout_constraintStart_toStartOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/tp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/tvps"
+        app:layout_constraintStart_toStartOf="@+id/etApellido"
+        app:layout_constraintTop_toTopOf="@+id/tvps" />
+
+    <EditText
+        android:id="@+id/te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/tp"
+        app:layout_constraintTop_toBottomOf="@+id/tp" />
 
     <TextView
         android:id="@+id/tvn"
@@ -46,12 +66,33 @@
         app:layout_constraintTop_toBottomOf="@+id/tvn" />
 
     <TextView
+        android:id="@+id/tvps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvs" />
+
+    <TextView
+        android:id="@+id/tve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="E-mail"
+        app:layout_constraintBottom_toBottomOf="@+id/te"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/tvNombreIntrod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
         android:text="Nombre introducido"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="362dp" />
+        app:layout_constraintEnd_toStartOf="@+id/te"
+        app:layout_constraintStart_toStartOf="@+id/te"
+        app:layout_constraintTop_toBottomOf="@+id/tve" />
 
     <TextView
         android:id="@+id/tvApellidoIntrod"
