@@ -33,4 +33,20 @@
         tools:layout_editor_absoluteX="223dp"
         tools:layout_editor_absoluteY="325dp" />
 
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="48dp"
+        android:layout_height="54dp"
+        android:text="/"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="40dp"
+        android:layout_height="49dp"
+        android:text="x"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="402dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
