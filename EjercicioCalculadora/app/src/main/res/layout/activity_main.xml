@@ -6,6 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="47dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="cargarSuma"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tValorRes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="47dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="cargarMulti"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDiv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="cargarResta"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDiv"
+        app:layout_constraintEnd_toEndOf="@+id/btnDiv"
+        app:layout_constraintStart_toStartOf="@+id/btnDiv"
+        app:layout_constraintTop_toTopOf="@+id/etNum2" />
+
     <TextView
         android:id="@+id/tRes"
         android:layout_width="wrap_content"
@@ -16,55 +51,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnRest"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="4dp"
-        android:onClick="cargarResta"
-        android:text="-"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSum"
-        app:layout_constraintEnd_toEndOf="@+id/btnMulti"
-        app:layout_constraintTop_toTopOf="@+id/btnSum" />
-
-    <Button
-        android:id="@+id/btnDiv"
-        android:layout_width="50dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginEnd="98dp"
-        android:onClick="cargarDiv"
-        android:text="/"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tValorRes"
-        app:layout_constraintStart_toStartOf="@+id/tRes"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnMulti"
-        android:layout_width="47dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginEnd="119dp"
-        android:onClick="cargarMulti"
-        android:text="x"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/etNum2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/btnSum"
         android:layout_width="0dp"
-        android:layout_height="52dp"
+        android:layout_height="57dp"
         android:layout_marginTop="82dp"
-        android:layout_marginBottom="81dp"
-        android:clickable="true"
+        android:layout_marginBottom="82dp"
         android:onClick="cargarSuma"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="@+id/btnMulti"
-        app:layout_constraintEnd_toEndOf="@+id/btnDiv"
-        app:layout_constraintStart_toStartOf="@+id/btnDiv"
+        app:layout_constraintEnd_toEndOf="@+id/btnMulti"
+        app:layout_constraintStart_toStartOf="@+id/btnMulti"
         app:layout_constraintTop_toTopOf="@+id/etNum2" />
 
     <TextView
@@ -93,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="31dp"
-        android:layout_marginBottom="118dp"
+        android:layout_marginBottom="119dp"
         android:onClick="reset"
         android:text="reset"
         app:layout_constraintBottom_toBottomOf="parent"
