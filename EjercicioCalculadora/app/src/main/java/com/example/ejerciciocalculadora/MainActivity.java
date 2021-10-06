@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(sNum1);
         int num2 = Integer.parseInt(sNum2);
 
-        int sum = num1 + num2;
-        tValorRes.setText(Integer.toString(sum));
+        int res = num1 + num2;
+        tValorRes.setText(Integer.toString(res));
     }
 
     public void cargarResta(View v) {
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(sNum1);
         int num2 = Integer.parseInt(sNum2);
 
-        int sum = num1 - num2;
-        tValorRes.setText(Integer.toString(sum));
+        int res = num1 - num2;
+        tValorRes.setText(Integer.toString(res));
     }
 
     public void cargarMulti(View v) {
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(sNum1);
         int num2 = Integer.parseInt(sNum2);
 
-        int sum = num1 * num2;
-        tValorRes.setText(Integer.toString(sum));
+        int res = num1 * num2;
+        tValorRes.setText(Integer.toString(res));
     }
 
     public void cargarDiv(View v) {
@@ -75,8 +75,9 @@ public class MainActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(sNum1);
         int num2 = Integer.parseInt(sNum2);
 
-        int sum = num1 / num2;
-        tValorRes.setText(Integer.toString(sum));
+            int res = num1 / num2;
+            tValorRes.setText(Integer.toString(res));
+
     }
 
     public void reset(View v) {

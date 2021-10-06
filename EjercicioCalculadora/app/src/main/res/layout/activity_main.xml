@@ -4,42 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="cargarSuma"
     tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/btnDiv"
-        android:layout_width="47dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="10dp"
-        android:onClick="cargarSuma"
-        android:text="/"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tValorRes"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnMulti"
-        android:layout_width="47dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="44dp"
-        android:onClick="cargarMulti"
-        android:text="*"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnDiv"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnRes"
-        android:layout_width="0dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="84dp"
-        android:onClick="cargarResta"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/btnDiv"
-        app:layout_constraintEnd_toEndOf="@+id/btnDiv"
-        app:layout_constraintStart_toStartOf="@+id/btnDiv"
-        app:layout_constraintTop_toTopOf="@+id/etNum2" />
 
     <TextView
         android:id="@+id/tRes"
@@ -49,19 +15,6 @@
         android:text="Resultado"
         app:layout_constraintBaseline_toBaselineOf="@+id/tValorRes"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnSum"
-        android:layout_width="0dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginBottom="82dp"
-        android:onClick="cargarSuma"
-        android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/btnMulti"
-        app:layout_constraintEnd_toEndOf="@+id/btnMulti"
-        app:layout_constraintStart_toStartOf="@+id/btnMulti"
-        app:layout_constraintTop_toTopOf="@+id/etNum2" />
 
     <TextView
         android:id="@+id/tNum1"
@@ -84,26 +37,15 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/etNum2"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="119dp"
-        android:onClick="reset"
-        android:text="reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tValorRes" />
-
     <TextView
         android:id="@+id/tValorRes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginTop="67dp"
         android:text="                                            "
-        app:layout_constraintBottom_toTopOf="@+id/btnReset"
-        app:layout_constraintStart_toEndOf="@+id/tRes" />
+        app:layout_constraintStart_toEndOf="@+id/tRes"
+        app:layout_constraintTop_toBottomOf="@+id/btnDivi" />
 
     <EditText
         android:id="@+id/etNum1"
@@ -125,5 +67,57 @@
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/tNum2"
         app:layout_constraintTop_toBottomOf="@+id/etNum1" />
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="31dp"
+        android:onClick="cargarSuma"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/tNum2"
+        app:layout_constraintTop_toBottomOf="@+id/etNum2" />
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:onClick="cargarResta"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSum"
+        app:layout_constraintEnd_toEndOf="@+id/etNum2" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="cargarMulti"
+        android:text="x"
+        app:layout_constraintStart_toStartOf="@+id/btnSum"
+        app:layout_constraintTop_toBottomOf="@+id/btnSum" />
+
+    <Button
+        android:id="@+id/btnDivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:onClick="cargarDiv"
+        android:text="/"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMulti"
+        app:layout_constraintEnd_toEndOf="@+id/btnRes" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:onClick="reset"
+        android:text="RESET"
+        app:layout_constraintStart_toStartOf="@+id/tValorRes"
+        app:layout_constraintTop_toBottomOf="@+id/tValorRes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
