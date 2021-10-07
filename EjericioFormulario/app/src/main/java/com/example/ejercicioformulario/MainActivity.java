@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cargarII(View v) {
-        ToggleButton tb_activation = (ToggleButton)  findViewById(R.id.tb_activation);
+        ToggleButton tb_activation = (ToggleButton)  findViewById(R.id.tb_activacion);
         TextView tv_activation = (TextView)  findViewById(R.id.tv_prueba);
 
         if (tb_activation.isChecked()){

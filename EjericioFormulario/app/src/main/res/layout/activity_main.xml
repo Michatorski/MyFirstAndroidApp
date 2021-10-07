@@ -41,7 +41,7 @@
         android:id="@+id/te"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="3dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/tp"
@@ -52,10 +52,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="167dp"
+        android:layout_marginTop="38dp"
         android:text="Nombre:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <TextView
         android:id="@+id/tvs"
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="23dp"
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etApellido" />
@@ -82,9 +82,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
+        android:layout_marginTop="27dp"
         android:text="E-mail"
-        app:layout_constraintBottom_toBottomOf="@+id/te"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/te" />
 
     <TextView
         android:id="@+id/tvNombreIntrod"
@@ -119,21 +120,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginBottom="30dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/tvApellidoIntrod"
-        app:layout_constraintTop_toBottomOf="@+id/tvValorNombreIntrod" />
+        app:layout_constraintBottom_toTopOf="@+id/btnCargarDatos"
+        app:layout_constraintStart_toEndOf="@+id/tvApellidoIntrod" />
 
     <Button
         android:id="@+id/btnCargarDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="94dp"
         android:onClick="cargar"
         android:text="Cargar Datos"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvApellidoIntrod" />
+        app:layout_constraintTop_toTopOf="@+id/tvNombreIntrod" />
 
     <ToggleButton
         android:id="@+id/tb_activacion"
@@ -150,10 +153,32 @@
         android:id="@+id/tv_prueba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
         android:layout_marginEnd="14dp"
+        android:layout_marginBottom="1dp"
         android:text="Hello World!"
-        app:layout_constraintEnd_toEndOf="@+id/tb_activacion"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="@+id/tb_activacion" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="61dp"
+        android:text="Switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tb_activacion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:text="CheckBox"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tb_activacion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
