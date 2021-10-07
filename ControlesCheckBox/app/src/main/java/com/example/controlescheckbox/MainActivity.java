@@ -1,10 +1,9 @@
-package com.example.ejercicioformulario;
+package com.example.controlescheckbox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -14,25 +13,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ToggleButton tb_activacion = (ToggleButton) findViewById(R.id.tb_activation);
+        // Cambiar el texto muestra el boton dependiendo del estado
+        tb_activacion.setTextOff("Desactivado");
+        tb_activacion.setTextOn("Activar");
+
+
+        // Activamos el botón al iniciar la app
+        //tb_activacion.setChecked(false);
     }
 
-    public void cargar(View v){
-        EditText etNombre = (EditText) findViewById(R.id.etNombre);
-        EditText etApellido = (EditText) findViewById(R.id.etApellido);
-
-        TextView tvValorNomreIntroducido = (TextView) findViewById(R.id.tvValorNombreIntrod);
-        TextView tvValorApellidoIntroducido = (TextView) findViewById(R.id.tvValorApellidoIntrod);
-
-        // Dos formas de recuperar  mostrar informacion de objetos
-
-        String nombre = etNombre.getText().toString();
-        tvValorNomreIntroducido.setText(nombre);
-
-        tvValorApellidoIntroducido.setText(nombre + " " + etApellido.getText().toString());
-
-    }
-
-    public void cargarII(View v) {
+    public void cargar(View v) {
         ToggleButton tb_activation = (ToggleButton)  findViewById(R.id.tb_activation);
         TextView tv_activation = (TextView)  findViewById(R.id.tv_prueba);
 

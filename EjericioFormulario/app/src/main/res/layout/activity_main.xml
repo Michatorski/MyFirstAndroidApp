@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="cargarII"
     tools:context=".MainActivity">
 
     <EditText
@@ -22,8 +23,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/tp"
-        app:layout_constraintStart_toStartOf="@+id/etNombre" />
+        app:layout_constraintBottom_toTopOf="@+id/tvs"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toTopOf="@+id/tvs" />
 
     <EditText
         android:id="@+id/tp"
@@ -70,10 +72,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="22dp"
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvs" />
+        app:layout_constraintTop_toBottomOf="@+id/etApellido" />
 
     <TextView
         android:id="@+id/tve"
@@ -88,49 +90,70 @@
         android:id="@+id/tvNombreIntrod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
         android:text="Nombre introducido"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvValorNombreIntrod"
         app:layout_constraintEnd_toStartOf="@+id/te"
-        app:layout_constraintStart_toStartOf="@+id/te"
-        app:layout_constraintTop_toBottomOf="@+id/tve" />
+        app:layout_constraintStart_toStartOf="@+id/te" />
 
     <TextView
         android:id="@+id/tvApellidoIntrod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="28dp"
         android:text="Apellido introducido"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombreIntrod" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvValorApellidoIntrod"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvValorNombreIntrod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
         android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvNombreIntrod"
-        app:layout_constraintStart_toStartOf="@+id/tvValorApellidoIntrod" />
+        app:layout_constraintStart_toStartOf="@+id/tvValorApellidoIntrod"
+        app:layout_constraintTop_toBottomOf="@+id/te" />
 
     <TextView
         android:id="@+id/tvValorApellidoIntrod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
+        android:layout_marginTop="29dp"
         android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvApellidoIntrod"
-        app:layout_constraintStart_toEndOf="@+id/tvApellidoIntrod" />
+        app:layout_constraintStart_toEndOf="@+id/tvApellidoIntrod"
+        app:layout_constraintTop_toBottomOf="@+id/tvValorNombreIntrod" />
 
     <Button
         android:id="@+id/btnCargarDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="94dp"
+        android:layout_marginTop="31dp"
         android:onClick="cargar"
         android:text="Cargar Datos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellidoIntrod" />
+
+    <ToggleButton
+        android:id="@+id/tb_activacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="7dp"
+        android:onClick="cargarII"
+        android:text="ToggleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_prueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="14dp"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="@+id/tb_activacion"
+        app:layout_constraintTop_toBottomOf="@+id/tb_activacion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
