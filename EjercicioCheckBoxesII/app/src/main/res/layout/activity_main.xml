@@ -10,65 +10,85 @@
         android:id="@+id/cbTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="74dp"
         android:text="Tv"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvCualOtros"
-        android:layout_width="213dp"
+        android:id="@+id/tvText"
+        android:layout_width="0dp"
         android:layout_height="29dp"
-        android:text="¿Cuáles otros?"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="321dp" />
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etCualOtros"
+        app:layout_constraintEnd_toEndOf="@+id/etCualOtros"
+        app:layout_constraintStart_toStartOf="@+id/cbOtros"
+        app:layout_constraintTop_toTopOf="@+id/cbOtros" />
 
     <Button
         android:id="@+id/btnCargar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="131dp"
         android:onClick="cargarInfo"
         android:text="cargar info"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="424dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
         android:id="@+id/cbRadio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Radio"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="122dp" />
+        app:layout_constraintStart_toStartOf="@+id/cbTv"
+        app:layout_constraintTop_toBottomOf="@+id/cbTv" />
 
     <CheckBox
         android:id="@+id/cbPeriodico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Periódico"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintStart_toStartOf="@+id/cbRadio"
+        app:layout_constraintTop_toBottomOf="@+id/cbRadio" />
 
     <CheckBox
         android:id="@+id/cbOtros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Otros"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="266dp" />
+        app:layout_constraintStart_toStartOf="@+id/cbAmigo"
+        app:layout_constraintTop_toBottomOf="@+id/cbAmigo" />
 
     <CheckBox
         android:id="@+id/cbAmigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Un amigo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintStart_toStartOf="@+id/cbPeriodico"
+        app:layout_constraintTop_toBottomOf="@+id/cbPeriodico" />
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
         android:text="¿Donde oíste de nosotros?"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="27dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCualOtros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnCargar"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
