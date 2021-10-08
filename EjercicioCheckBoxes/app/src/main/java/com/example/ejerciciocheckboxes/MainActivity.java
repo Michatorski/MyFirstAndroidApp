@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         boxBel = (CheckBox) findViewById(R.id.cbBelleza);
         boxLib = (CheckBox) findViewById(R.id.cbLibros);
         boxCar = (CheckBox) findViewById(R.id.cbCarrera);
+        boxEdu = (CheckBox) findViewById(R.id.cbEducacion);
         boxEve = (CheckBox) findViewById(R.id.cbEventos);
         boxFam = (CheckBox) findViewById(R.id.cbFamilia);
         boxCom = (CheckBox) findViewById(R.id.cbComida);
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         }
         if (boxCar.isChecked()){
             intereses.add(boxCar.getText().toString());
+        }
+        if (boxEdu.isChecked()){
+            intereses.add(boxEdu.getText().toString());
         }
         if (boxEve.isChecked()){
             intereses.add(boxEve.getText().toString());
