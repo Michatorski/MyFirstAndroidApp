@@ -6,93 +6,120 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <CheckBox
+        android:id="@+id/cbBelleza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="Belleza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <CheckBox
+        android:id="@+id/cbLibros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Libros y Literatura"
+        app:layout_constraintStart_toStartOf="@+id/cbBelleza"
+        app:layout_constraintTop_toBottomOf="@+id/cbBelleza" />
+
+    <CheckBox
+        android:id="@+id/cbCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carreras"
+        app:layout_constraintStart_toStartOf="@+id/cbLibros"
+        app:layout_constraintTop_toBottomOf="@+id/cbLibros" />
+
+    <CheckBox
+        android:id="@+id/cbEducacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Educacion"
+        app:layout_constraintStart_toStartOf="@+id/cbCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/cbCarrera" />
+
+    <CheckBox
+        android:id="@+id/cbEventos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eventos"
+        app:layout_constraintStart_toStartOf="@+id/cbEducacion"
+        app:layout_constraintTop_toBottomOf="@+id/cbEducacion" />
+
+    <CheckBox
+        android:id="@+id/cbFamilia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="123dp"
+        android:text="Familia"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbComida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="25dp" />
+        android:text="Comida y bebidas"
+        app:layout_constraintStart_toStartOf="@+id/cbFamilia"
+        app:layout_constraintTop_toBottomOf="@+id/cbFamilia" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cbVideojuegos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="84dp" />
+        android:text="Videojuegos"
+        app:layout_constraintStart_toStartOf="@+id/cbComida"
+        app:layout_constraintTop_toBottomOf="@+id/cbComida" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cbDeportes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:text="Deportes"
+        app:layout_constraintStart_toStartOf="@+id/cbVideojuegos"
+        app:layout_constraintTop_toBottomOf="@+id/cbVideojuegos" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/cbArte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="188dp" />
+        android:text="Arte"
+        app:layout_constraintStart_toStartOf="@+id/cbDeportes"
+        app:layout_constraintTop_toBottomOf="@+id/cbDeportes" />
 
-    <CheckBox
-        android:id="@+id/checkBox5"
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="243dp" />
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:text="Elige tus intereses"
+        app:layout_constraintStart_toStartOf="@+id/cbBelleza"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox6"
+    <Button
+        android:id="@+id/btnCargar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="35dp"
+        android:onClick="cargarInfo"
+        android:text="cargar info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbEventos" />
 
-    <CheckBox
-        android:id="@+id/checkBox7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="92dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="137dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="177dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="235dp" />
+    <TextView
+        android:id="@+id/tvChecked"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCargar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
