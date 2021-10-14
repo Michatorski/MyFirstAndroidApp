@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,44 +40,44 @@ public class MainActivity extends AppCompatActivity {
         List<String> intereses = new ArrayList<>();
 
         if (boxBel.isChecked()){
-            intereses.add(boxBel.getText().toString());
+            intereses.add(boxBel.getText().toString() + "\n");
         }
         if (boxLib.isChecked()){
-            intereses.add(boxLib.getText().toString());
+            intereses.add(boxLib.getText().toString()  + "\n");
         }
         if (boxCar.isChecked()){
-            intereses.add(boxCar.getText().toString());
+            intereses.add(boxCar.getText().toString() + "\n");
         }
         if (boxEdu.isChecked()){
-            intereses.add(boxEdu.getText().toString());
+            intereses.add(boxEdu.getText().toString() + "\n");
         }
         if (boxEve.isChecked()){
-            intereses.add(boxEve.getText().toString());
+            intereses.add(boxEve.getText().toString() + "\n");
         }
         if (boxFam.isChecked()){
-            intereses.add(boxFam.getText().toString());
+            intereses.add(boxFam.getText().toString() + "\n");
         }
         if (boxCom.isChecked()){
-            intereses.add(boxCom.getText().toString());
+            intereses.add(boxCom.getText().toString() + "\n");
         }
         if (boxVid.isChecked()){
-            intereses.add(boxVid.getText().toString());
+            intereses.add(boxVid.getText().toString() + "\n");
         }
         if (boxDep.isChecked()){
-            intereses.add(boxDep.getText().toString());
+            intereses.add(boxDep.getText().toString() + "\n");
         }
         if (boxArt.isChecked()){
-            intereses.add(boxArt.getText().toString());
+            intereses.add(boxArt.getText().toString() + "\n");
         }
 
+        String list = intereses.toString().replace("[", "");
+        list = list.replace("]", "");
+        list = list.replace(",", "");
 
-        checkText.setText("Has seleccionado: " + intereses.toString());
+        checkText.setText("Has seleccionado: " + list);
 
-//        if (boxArt.isChecked()){
-//            checkText.setText( "Arte");
-//        } else {
-//            checkText.setText("No has seleccionado nada.");
-//        }
+        String aviso = "Has seleccionado:" + list;
+        Toast.makeText(this, aviso, Toast.LENGTH_LONG).show();
 
 
     }
