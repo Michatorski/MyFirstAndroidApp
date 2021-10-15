@@ -8,6 +8,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     protected boolean isFruitVisible, isVegetableVisible;
@@ -33,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
         tvPatata = (TextView) findViewById(R.id.tPata);
         tvPimiento = (TextView) findViewById(R.id.tPimi);
         tvCestaCompra = (TextView) findViewById(R.id.tCestaComp);
+
+        imgBtnAlbaricoque.setVisibility(View.GONE);
+        imgBtnPlatano.setVisibility(View.GONE);
+        imgBtnPatata.setVisibility(View.GONE);
+        imgBtnPimiento.setVisibility(View.GONE);
+
+        tvAlbaricoque.setVisibility(View.GONE);
+        tvPlatano.setVisibility(View.GONE);
+        tvPatata.setVisibility(View.GONE);
+        tvPimiento.setVisibility(View.GONE);
 
         isFruitVisible = false;
         isVegetableVisible = false;
@@ -86,4 +99,39 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void addAlbaricoque(View v){
+
+        Toast toast = Toast.makeText(this, "Has escogido ALbaricoque", Toast.LENGTH_SHORT);
+        toast.show();
+
+        tvCestaCompra.setText("Albaricoque" + "\n" + tvCestaCompra.getText());
+
+    }
+
+    public void addPlatano(View v){
+
+        Toast toast = Toast.makeText(this, "Has escogido Platano", Toast.LENGTH_SHORT);
+        toast.show();
+
+        tvCestaCompra.setText("Platano" + "\n" + tvCestaCompra.getText());
+
+    }
+
+    public void addPatata(View v){
+
+        Toast toast = Toast.makeText(this, "Has escogido Patata", Toast.LENGTH_SHORT);
+        toast.show();
+
+        tvCestaCompra.setText("Patata" + "\n" + tvCestaCompra.getText());
+
+    }
+
+    public void addPimiento(View v){
+
+        Toast toast = Toast.makeText(this, "Has escogido Pimiento", Toast.LENGTH_SHORT);
+        toast.show();
+
+        tvCestaCompra.setText("Pimiento" + "\n" + tvCestaCompra.getText());
+
+    }
 }
