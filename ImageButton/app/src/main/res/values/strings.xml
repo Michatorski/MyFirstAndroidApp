@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ImageButton</string>
+    <string name="platano">platano</string>
+    <string name="verduras">Verduras</string>
+    <string name="frutas">Frutas</string>
+    <string name="pimiento">Pimiento</string>
+    <string name="cesta_de_compra">Cesta de Compra:</string>
+    <string name="patatas">Patatas</string>
+    <string name="albaricoque">Albaricoque</string>
+    <string name="pl_tano">Plátano</string>
+    <string name="imagepatatas">imagePatatas</string>
+    <string name="imagepimiento">imagePimiento</string>
+    <string name="imageplatano">imagePlatano</string>
+    <string name="imagealbaricoque">imageAlbaricoque</string>
+    <string name="imagefruta">imageFruta</string>
+    <string name="imageverdura">imageVerdura</string>
+</resources>

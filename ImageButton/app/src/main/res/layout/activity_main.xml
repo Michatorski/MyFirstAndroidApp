@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/ibFruta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="123dp"
+        android:contentDescription="@string/imagefruta"
+        android:onClick="showFruta"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/ibVerdura"
+        app:layout_constraintEnd_toStartOf="@+id/ibPlatano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fruta" />
+
+    <TextView
+        android:id="@+id/tFrut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:text="@string/frutas"
+        app:layout_constraintBottom_toTopOf="@+id/ibFruta"
+        app:layout_constraintEnd_toStartOf="@+id/tAlbar"
+        app:layout_constraintStart_toStartOf="@+id/tCesta" />
+
+    <ImageButton
+        android:id="@+id/ibAlba"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="39dp"
+        android:contentDescription="@string/imagealbaricoque"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tPlat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tAlbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/albaricoque" />
+
+    <ImageButton
+        android:id="@+id/ibPlatano"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="92dp"
+        android:contentDescription="@string/imageplatano"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/tPata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibFruta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/platano" />
+
+    <ImageButton
+        android:id="@+id/ibVerdura"
+        android:layout_width="90dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="103dp"
+        android:contentDescription="@string/imageverdura"
+        android:onClick="showVerdura"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tCesta"
+        app:layout_constraintEnd_toEndOf="@+id/tPata"
+        app:layout_constraintStart_toStartOf="@+id/tCesta"
+        app:layout_constraintTop_toBottomOf="@+id/ibFruta"
+        app:srcCompat="@drawable/verdura" />
+
+    <TextView
+        android:id="@+id/tVerd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="114dp"
+        android:text="@string/verduras"
+        app:layout_constraintBottom_toTopOf="@+id/ibVerdura"
+        app:layout_constraintEnd_toStartOf="@+id/ibPatata"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibPatata"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="134dp"
+        android:contentDescription="@string/imagepatatas"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tCestaComp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tVerd"
+        app:layout_constraintTop_toTopOf="@+id/ibPlatano"
+        app:srcCompat="@drawable/patatas" />
+
+    <ImageButton
+        android:id="@+id/ibPimiento"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="221dp"
+        android:contentDescription="@string/imagepimiento"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tPimi"
+        app:layout_constraintTop_toTopOf="@+id/ibPlatano"
+        app:srcCompat="@drawable/pimiento" />
+
+    <TextView
+        android:id="@+id/tAlbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/albaricoque"
+        app:layout_constraintBottom_toTopOf="@+id/ibFruta"
+        app:layout_constraintEnd_toStartOf="@+id/ibAlba"
+        app:layout_constraintStart_toEndOf="@+id/ibFruta" />
+
+    <TextView
+        android:id="@+id/tPlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="@string/pl_tano"
+        app:layout_constraintBottom_toTopOf="@+id/tPata"
+        app:layout_constraintEnd_toStartOf="@+id/ibPlatano"
+        app:layout_constraintTop_toBottomOf="@+id/ibAlba" />
+
+    <TextView
+        android:id="@+id/tPata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:text="@string/patatas"
+        app:layout_constraintBottom_toTopOf="@+id/tPimi"
+        app:layout_constraintEnd_toStartOf="@+id/ibPatata"
+        app:layout_constraintTop_toBottomOf="@+id/tPlat" />
+
+    <TextView
+        android:id="@+id/tPimi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="235dp"
+        android:layout_marginBottom="257dp"
+        android:text="@string/pimiento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibPimiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tPata" />
+
+    <TextView
+        android:id="@+id/tCesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="165dp"
+        android:text="@string/cesta_de_compra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibVerdura" />
+
+    <TextView
+        android:id="@+id/tCestaComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/tCesta"
+        app:layout_constraintStart_toStartOf="@+id/tCesta"
+        app:layout_constraintTop_toBottomOf="@+id/tCesta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
