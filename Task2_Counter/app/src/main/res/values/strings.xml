@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Task2_Counter</string>
+    <string name="contador">Contador</string>
+    <string name="bMinus">-</string>
+    <string name="bPlus">+</string>
+    <string name="contoneo_negativo">Contoneo Negativo</string>
+    <string name="tvCounter">0</string>
 </resources>

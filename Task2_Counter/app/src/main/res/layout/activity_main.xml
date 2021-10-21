@@ -10,7 +10,7 @@
         android:id="@+id/tCountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contador"
+        android:text="@string/contador"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -19,8 +19,8 @@
         android:layout_width="96dp"
         android:layout_height="101dp"
         android:backgroundTint="#C6C6C6"
-        android:text="-"
-        android:textColor="#424242"
+        android:text="@string/bMinus"
+        android:textColor="#546E7A"
         android:textSize="48sp"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="209dp" />
@@ -30,17 +30,17 @@
         android:layout_width="106dp"
         android:layout_height="95dp"
         android:backgroundTint="#C8C8C8"
-        android:text="+"
-        android:textColor="#3A3A3A"
+        android:text="@string/bPlus"
+        android:textColor="#546E7A"
         android:textSize="48sp"
         tools:layout_editor_absoluteX="240dp"
         tools:layout_editor_absoluteY="209dp" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/tbOnOff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton"
+        android:textColor="#455A64"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="326dp" />
 
@@ -51,13 +51,15 @@
         android:ems="10"
         android:inputType="numberSigned"
         tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="472dp" />
+        tools:layout_editor_absoluteY="472dp"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
+        android:textColor="#5E35B1"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="472dp" />
 
@@ -65,7 +67,7 @@
         android:id="@+id/checkBox"
         android:layout_width="164dp"
         android:layout_height="47dp"
-        android:text="Contoneo Negativo"
+        android:text="@string/contoneo_negativo"
         tools:layout_editor_absoluteX="240dp"
         tools:layout_editor_absoluteY="472dp" />
 
@@ -73,7 +75,7 @@
         android:id="@+id/tvFinalCount"
         android:layout_width="98dp"
         android:layout_height="82dp"
-        android:text="0"
+        android:text="@string/tvCounter"
         android:textAlignment="center"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
