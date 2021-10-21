@@ -91,7 +91,8 @@
         android:contentDescription="@string/imagewindows"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/windows" />
+        app:srcCompat="@drawable/windows"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -114,19 +115,22 @@
         app:srcCompat="@drawable/android" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="383dp" />
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/resultados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibSave" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="416dp" />
+        android:id="@+id/tvResText"
+        android:layout_width="215dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
