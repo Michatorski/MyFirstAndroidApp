@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExerciseEncuesta</string>
+    <string name="encuesta_sobre_sitemas_operativos">Encuesta sobre sitemas operativos:</string>
+    <string name="vota_el_mejor_sistema">Vota el mejor sistema:</string>
+    <string name="imagelinux">imageLinux</string>
+    <string name="imgwindows">imgWindows</string>
+    <string name="imgios">imgIos</string>
+    <string name="img_android">imgAndroid</string>
+</resources>

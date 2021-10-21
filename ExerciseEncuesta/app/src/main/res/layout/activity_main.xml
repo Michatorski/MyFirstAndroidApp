@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="74dp"
+        android:text="@string/encuesta_sobre_sitemas_operativos"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/ibLinux"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibLinux"
+        android:layout_width="84dp"
+        android:layout_height="72dp"
+        android:contentDescription="@string/imagelinux"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/linux_penguin"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <ImageButton
+        android:id="@+id/ibAndroid"
+        android:layout_width="84dp"
+        android:layout_height="72dp"
+        android:contentDescription="@string/img_android"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/android"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <ImageButton
+        android:id="@+id/ibWindows"
+        android:layout_width="84dp"
+        android:layout_height="72dp"
+        android:contentDescription="@string/imgwindows"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/windows"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <ImageButton
+        android:id="@+id/ibIos"
+        android:layout_width="84dp"
+        android:layout_height="72dp"
+        android:contentDescription="@string/imgios"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ios_logo"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vota_el_mejor_sistema"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
