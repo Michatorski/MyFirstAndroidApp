@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ProjectRadioButtons</string>
+    <string name="_480p">480p</string>
+    <string name="_720p">720p</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="genero">Genero</string>
+    <string name="resolucion">Resolucion</string>
+    <string name="_1080p">1080p</string>
 </resources>
