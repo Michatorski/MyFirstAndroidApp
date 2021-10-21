@@ -15,4 +15,8 @@
     <string name="imageandroid">imageAndroid</string>
     <string name="imagelinux">imageLinux</string>
     <string name="resultados">Resultados</string>
+    <string name="image_linux">image_Linux</string>
+    <string name="image_android">image_android</string>
+    <string name="image_windows">image_Windows</string>
+    <string name="image_ios">image_ios</string>
 </resources>
