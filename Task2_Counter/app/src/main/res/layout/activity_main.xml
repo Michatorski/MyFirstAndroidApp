@@ -74,8 +74,11 @@
         android:layout_width="98dp"
         android:layout_height="82dp"
         android:text="0"
+        android:textAlignment="center"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="151dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="65dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
