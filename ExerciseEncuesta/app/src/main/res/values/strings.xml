@@ -2,8 +2,16 @@
     <string name="app_name">ExerciseEncuesta</string>
     <string name="encuesta_sobre_sitemas_operativos">Encuesta sobre sitemas operativos:</string>
     <string name="vota_el_mejor_sistema">Vota el mejor sistema:</string>
-    <string name="imagelinux">imageLinux</string>
     <string name="imgwindows">imgWindows</string>
     <string name="imgios">imgIos</string>
     <string name="img_android">imgAndroid</string>
+    <string name="linux">Linux</string>
+    <string name="windows">Windows</string>
+    <string name="ios">iOS</string>
+    <string name="android">Android</string>
+    <string name="imgsave">imgSave</string>
+    <string name="imagewindows">imageWindows</string>
+    <string name="imageios">imageIOS</string>
+    <string name="imageandroid">imageAndroid</string>
+    <string name="imagelinux">imageLinux</string>
 </resources>

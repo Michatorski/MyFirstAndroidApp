@@ -10,54 +10,45 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="74dp"
         android:text="@string/encuesta_sobre_sitemas_operativos"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/ibLinux"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/ibLinux"
-        android:layout_width="84dp"
-        android:layout_height="72dp"
-        android:contentDescription="@string/imagelinux"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/linux_penguin"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="101dp" />
+    <RadioGroup
+        android:id="@+id/rgOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1">
 
-    <ImageButton
-        android:id="@+id/ibAndroid"
-        android:layout_width="84dp"
-        android:layout_height="72dp"
-        android:contentDescription="@string/img_android"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/android"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="317dp" />
+        <RadioButton
+            android:id="@+id/rbLinux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/linux" />
 
-    <ImageButton
-        android:id="@+id/ibWindows"
-        android:layout_width="84dp"
-        android:layout_height="72dp"
-        android:contentDescription="@string/imgwindows"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/windows"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="173dp" />
+        <RadioButton
+            android:id="@+id/ibWondows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/windows" />
 
-    <ImageButton
-        android:id="@+id/ibIos"
-        android:layout_width="84dp"
-        android:layout_height="72dp"
-        android:contentDescription="@string/imgios"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/ios_logo"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="245dp" />
+        <RadioButton
+            android:id="@+id/rbIos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ios" />
+
+        <RadioButton
+            android:id="@+id/rbAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/android" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/tv1"
@@ -68,5 +59,74 @@
         android:text="@string/vota_el_mejor_sistema"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <ImageButton
+        android:id="@+id/ibSave"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="31dp"
+        android:contentDescription="@string/imgsave"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgOS"
+        app:srcCompat="@drawable/saveicon" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="222dp"
+        android:contentDescription="@string/imagelinux"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/linux_penguin" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="222dp"
+        android:contentDescription="@string/imagewindows"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/windows" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="221dp"
+        android:contentDescription="@string/imageios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/ios_logo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="61dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="207dp"
+        android:contentDescription="@string/imageandroid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/android" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="416dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
