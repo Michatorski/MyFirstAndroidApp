@@ -46,12 +46,12 @@
 
     <EditText
         android:id="@+id/editTextNumberSigned2"
-        android:layout_width="141dp"
-        android:layout_height="125dp"
+        android:layout_width="74dp"
+        android:layout_height="57dp"
         android:ems="10"
         android:inputType="numberSigned"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="55dp" />
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="472dp" />
 
     <Button
         android:id="@+id/button3"
@@ -68,5 +68,14 @@
         android:text="Contoneo Negativo"
         tools:layout_editor_absoluteX="240dp"
         tools:layout_editor_absoluteY="472dp" />
+
+    <TextView
+        android:id="@+id/tvFinalCount"
+        android:layout_width="98dp"
+        android:layout_height="82dp"
+        android:text="0"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="65dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

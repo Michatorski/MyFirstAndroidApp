@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showFruta(View v){
-       Toast toast = Toast.makeText(this, "Has elegido fruta", Toast.LENGTH_SHORT);
-       toast.show();
+
 
 
         if(isFruitVisible){
@@ -62,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
             imgBtnPlatano.setVisibility(View.INVISIBLE);
             tvPlatano.setVisibility(View.INVISIBLE);
-
+            Toast toast = Toast.makeText(this, "Ocultando frutas", Toast.LENGTH_SHORT);
+            toast.show();
             isFruitVisible = false;
         } else {
             imgBtnAlbaricoque.setVisibility(View.VISIBLE);
@@ -70,15 +70,13 @@ public class MainActivity extends AppCompatActivity {
 
             imgBtnPlatano.setVisibility(View.VISIBLE);
             tvPlatano.setVisibility(View.VISIBLE);
-
+            Toast toast = Toast.makeText(this, "Mostrando frutas", Toast.LENGTH_SHORT);
+            toast.show();
             isFruitVisible = true;
         }
     }
 
     public void showVerdura(View v){
-        Toast toast = Toast.makeText(this, "Has elegido verdura", Toast.LENGTH_SHORT);
-        toast.show();
-
 
         if(isVegetableVisible){
             imgBtnPatata.setVisibility(View.INVISIBLE);
@@ -86,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
             imgBtnPimiento.setVisibility(View.INVISIBLE);
             tvPimiento.setVisibility(View.INVISIBLE);
-
+            Toast toast = Toast.makeText(this, "Ocultando verduras", Toast.LENGTH_SHORT);
+            toast.show();
             isVegetableVisible = false;
         } else {
             imgBtnPatata.setVisibility(View.VISIBLE);
@@ -94,44 +93,35 @@ public class MainActivity extends AppCompatActivity {
 
             imgBtnPimiento.setVisibility(View.VISIBLE);
             tvPimiento.setVisibility(View.VISIBLE);
-
+            Toast toast = Toast.makeText(this, "Mostrando verduras", Toast.LENGTH_SHORT);
+            toast.show();
             isVegetableVisible = true;
         }
     }
 
     public void addAlbaricoque(View v){
-
         Toast toast = Toast.makeText(this, "Has escogido ALbaricoque", Toast.LENGTH_SHORT);
         toast.show();
-
         tvCestaCompra.setText("Albaricoque" + "\n" + tvCestaCompra.getText());
-
     }
 
     public void addPlatano(View v){
-
         Toast toast = Toast.makeText(this, "Has escogido Platano", Toast.LENGTH_SHORT);
         toast.show();
-
         tvCestaCompra.setText("Platano" + "\n" + tvCestaCompra.getText());
-
     }
 
     public void addPatata(View v){
-
         Toast toast = Toast.makeText(this, "Has escogido Patata", Toast.LENGTH_SHORT);
         toast.show();
 
         tvCestaCompra.setText("Patata" + "\n" + tvCestaCompra.getText());
-
     }
 
     public void addPimiento(View v){
-
         Toast toast = Toast.makeText(this, "Has escogido Pimiento", Toast.LENGTH_SHORT);
         toast.show();
 
         tvCestaCompra.setText("Pimiento" + "\n" + tvCestaCompra.getText());
-
     }
 }
