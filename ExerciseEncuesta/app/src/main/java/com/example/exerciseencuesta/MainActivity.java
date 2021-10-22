@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton saveButton;
@@ -47,15 +48,19 @@ public class MainActivity extends AppCompatActivity {
         switch (rgOS.getCheckedRadioButtonId()){
 
             case R.id.rbLinux:
+                Toast.makeText(this, "has votado Linux", Toast.LENGTH_SHORT).show();
                     totalVotesLin++;
                 break;
             case  R.id.rbWindows:
+                Toast.makeText(this, "has votado Windows", Toast.LENGTH_SHORT).show();
                     totalVoteWin++;
                 break;
             case  R.id.rbIos:
+                Toast.makeText(this, "has votado iOS", Toast.LENGTH_SHORT).show();
                 totalVotesIos++;
                 break;
             case  R.id.rbAndroid:
+                Toast.makeText(this, "has votado Android", Toast.LENGTH_SHORT).show();
                 totalVotesAndr++;
                 break;
         }
