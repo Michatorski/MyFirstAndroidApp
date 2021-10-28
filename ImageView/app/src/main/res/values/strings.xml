@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImageView</string>
+    <string name="manzana">Manzana</string>
+    <string name="cereza">Cereza</string>
+    <string name="aguacate">Aguacate</string>
+    <string name="fruit">fruit</string>
+    <string name="frutas">frutas</string>
+</resources>
