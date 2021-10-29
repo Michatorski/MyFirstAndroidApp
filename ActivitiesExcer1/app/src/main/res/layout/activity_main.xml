@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PantallaPrincipal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <Button
+        android:id="@+id/bt_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cargar datos"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="82dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <EditText
+        android:id="@+id/et_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="156dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bt_charge"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="98dp"
+        android:layout_height="29dp"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="75dp"
+        android:layout_height="31dp"
+        android:text="Apellidos"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <CheckBox
+        android:id="@+id/cb_carne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Tienes carné?"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
