@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ActivitiesExcer1</string>
+    <string name="pantallaprincipal">PantallaPrincipal</string>
+    <string name="cargar_datos">cargar datos</string>
+    <string name="tv_nombre">Nombre</string>
+    <string name="tv_apellido">Apellido</string>
+    <string name="tv_edad">Edad</string>
+    <string name="tienes_carn">¿Tienes carné?</string>
+    <string name="et_nombre">Nombre</string>
+    <string name="et_apellidos">Apellidos</string>
+    <string name="et_edad">Edad</string>
 </resources>
