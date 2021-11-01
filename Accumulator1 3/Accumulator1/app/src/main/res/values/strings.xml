@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Accumulator</string>
+    <string name="tvTittle1">Contador</string>
+    <string name="etNumber">1</string>
+    <string name="btnRes">-</string>
+    <string name="btnSum">+</string>
+    <string name="tbShowControls">apagado</string>
+    <string name="tbShowControls1">encendido</string>
+    <string name="btnReset">Resetear</string>
+    <string name="tvNumberResult">0</string>
+    <string name="cbNegativeNumber">Conteo Negativo</string>
+    <string name="etnum">0</string>
+    <string name="numAcumulado">0</string>
+</resources>

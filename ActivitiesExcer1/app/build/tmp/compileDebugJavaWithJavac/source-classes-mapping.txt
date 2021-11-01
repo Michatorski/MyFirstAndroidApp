@@ -1,0 +1,6 @@
+com/example/activitiesexcer1/MainActivity2.java
+ com.example.activitiesexcer1.MainActivity2
+com/example/activitiesexcer1/BuildConfig.java
+ com.example.activitiesexcer1.BuildConfig
+com/example/activitiesexcer1/MainActivity.java
+ com.example.activitiesexcer1.MainActivity
