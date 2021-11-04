@@ -36,12 +36,13 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="76dp"
         android:ems="10"
+        android:hint="@string/nombre"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/et_surname"
@@ -50,12 +51,13 @@
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="4dp"
         android:ems="10"
+        android:hint="@string/apellidos"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/et_age"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/et_age"
@@ -64,21 +66,22 @@
         android:layout_marginStart="24dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
+        android:hint="@string/edad"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/cb_carne"
-        app:layout_constraintStart_toEndOf="@+id/tv3"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintStart_toEndOf="@+id/am_tv_age1"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/tv1"
+        android:id="@+id/am_tv_name1"
         android:layout_width="60dp"
         android:layout_height="32dp"
         android:layout_marginStart="56dp"
         android:layout_marginBottom="32dp"
         android:text="@string/et_nombre"
-        app:layout_constraintBottom_toTopOf="@+id/tv2"
+        app:layout_constraintBottom_toTopOf="@+id/am_tv_surname1"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
@@ -92,7 +95,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv3"
+        android:id="@+id/am_tv_age1"
         android:layout_width="42dp"
         android:layout_height="25dp"
         android:layout_marginStart="56dp"
@@ -102,13 +105,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/am_tv_surname1"
         android:layout_width="65dp"
         android:layout_height="27dp"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="20dp"
         android:text="@string/et_apellidos"
-        app:layout_constraintBottom_toTopOf="@+id/tv3"
+        app:layout_constraintBottom_toTopOf="@+id/am_tv_age1"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

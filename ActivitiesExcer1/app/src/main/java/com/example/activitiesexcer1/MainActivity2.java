@@ -17,6 +17,11 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        initialize();
+
+    }
+
+    public void initialize(){
         Intent intent = getIntent();
         String nameMessage = intent.getStringExtra(MainActivity.MAINACTIVITY_NAME);
         String surnameMessage = intent.getStringExtra(MainActivity.MAINACTIVITY_SURNAME);
@@ -26,10 +31,13 @@ public class MainActivity2 extends AppCompatActivity {
 
         name = (TextView) findViewById(R.id.tv_name);
         name.setText(nameMessage);
+
         surname = (TextView) findViewById(R.id.tv_surname);
         surname.setText(surnameMessage);
+
         age = (TextView) findViewById(R.id.tv_age);
         age.setText(ageMessage);
+
         licence = (TextView) findViewById(R.id.tv_carne);
         licence.setText(licenceMessage);
     }

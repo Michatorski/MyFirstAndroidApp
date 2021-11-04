@@ -1900,6 +1900,10 @@ id aligned
 id all
 id allStates
 id always
+id am2_tv_name
+id am_tv_age1
+id am_tv_name1
+id am_tv_surname1
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -2273,10 +2277,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tv1
-id tv2
-id tv3
-id tv4
 id tv5
 id tv6
 id tv_age
@@ -2489,6 +2489,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string apellidos
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2499,6 +2500,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string edad
 string error_icon_content_description
 string et_apellidos
 string et_edad
@@ -2564,6 +2566,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string nombre
 string pantallaprincipal
 string password_toggle_content_description
 string path_password_eye
