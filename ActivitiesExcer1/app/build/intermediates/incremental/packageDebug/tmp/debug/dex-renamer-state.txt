@@ -1,9 +1,9 @@
-#Thu Nov 04 09:29:51 CET 2021
-base.2=/home/micho/GitHub/AndroidStuff/MyFirstAndroidApp/ActivitiesExcer1/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+#Sun Nov 07 14:01:57 CET 2021
+base.2=C\:\\Users\\OmegaKnight\\Documents\\GitHub\\DAM2\\AndroidStuff\\MyFirstAndroidApp\\ActivitiesExcer1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
 path.2=15/classes.dex
-base.1=/home/micho/GitHub/AndroidStuff/MyFirstAndroidApp/ActivitiesExcer1/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=C\:\\Users\\OmegaKnight\\Documents\\GitHub\\DAM2\\AndroidStuff\\MyFirstAndroidApp\\ActivitiesExcer1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 path.1=0/classes.dex
-base.0=/home/micho/GitHub/AndroidStuff/MyFirstAndroidApp/ActivitiesExcer1/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.0=C\:\\Users\\OmegaKnight\\Documents\\GitHub\\DAM2\\AndroidStuff\\MyFirstAndroidApp\\ActivitiesExcer1\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
