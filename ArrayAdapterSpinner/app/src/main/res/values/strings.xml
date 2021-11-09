@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ArrayAdapter&amp;Spinner</string>
+    <string name="imgfruit">imgFruit</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="imgcherry">imgCherry</string>
+    <string name="imgapple">imgApple</string>
+    <string name="imgavocado">imgAvocado</string>
 </resources>

@@ -6,13 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Spinner
+        android:id="@+id/spinFrutas"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imgFruits"
+        android:layout_width="358dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="168dp"
+        android:contentDescription="@string/imgfruit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fruta" />
+
+    <ImageView
+        android:id="@+id/imgApple"
+        android:layout_width="273dp"
+        android:layout_height="261dp"
+        android:layout_marginBottom="130dp"
+        android:contentDescription="@string/imgapple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/imgAvocado"
+        android:layout_width="317dp"
+        android:layout_height="206dp"
+        android:layout_marginBottom="184dp"
+        android:contentDescription="@string/imgavocado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/avocado" />
+
+    <ImageView
+        android:id="@+id/imgCherry"
+        android:layout_width="348dp"
+        android:layout_height="274dp"
+        android:layout_marginBottom="128dp"
+        android:contentDescription="@string/imgcherry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cherry" />
+
+    <Button
+        android:id="@+id/btnShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="47dp"
+        android:onClick="showPicture"
+        android:text="@string/mostrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
