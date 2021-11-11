@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -37,29 +38,6 @@ public class MainActivity extends AppCompatActivity {
         substractButton = (Button) findViewById(R.id.btnSub);
         addButton = (Button) findViewById(R.id.btnAdd);
 
-        substractButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (TextUtils.isEmpty(editNum.getText().toString())){
-                    Toast.makeText(MainActivity.this,
-                            "Es necesario introducir un numero",
-                            Toast.LENGTH_SHORT).show();
-                }
-            }
-
-
-        });
-
-        addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (TextUtils.isEmpty(editNum.getText().toString())){
-                    Toast.makeText(MainActivity.this,
-                            "Es necesario introducir un numero",
-                            Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
         onOffButtons = (ToggleButton) findViewById(R.id.tbShowButtons);
 
@@ -76,42 +54,54 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addNumber(View v) {
-        String stNum = editNum.getText().toString();
-        double newNum = Double.parseDouble(stNum);
 
-        String stRes = result.getText().toString();
-        double newRes = Double.parseDouble(stRes);
-         newRes += newNum;
-
-         if ( newNum > 100){
-            Toast.makeText(this, "No se puede más de 100", Toast.LENGTH_SHORT).show();
-        } else{
-            result.setText("" + newRes);
-        }
-
-
-    }
-
-    public void substractNumber (View v){
-        String stNum = editNum.getText().toString();
-        double newNum = Double.parseDouble(stNum);
-
-        String stRes = result.getText().toString();
-        double newRes = Double.parseDouble(stRes);
-        newRes -= newNum;
-
-        if ( newNum > 100){
-            Toast.makeText(this, "No se puede más de 100", Toast.LENGTH_SHORT).show();
-        } else if (newRes < 0 ){
-            Toast.makeText(this, "El resultado es un numero negativo", Toast.LENGTH_SHORT).show();
+        if (TextUtils.isEmpty(editNum.getText().toString())) {
+            Toast.makeText(MainActivity.this,
+                    "Es necesario introducir un numero",
+                    Toast.LENGTH_SHORT).show();
         } else {
-            result.setText("" + newRes);
+            String stNum = editNum.getText().toString();
+            double newNum = Double.parseDouble(stNum);
+
+            String stRes = result.getText().toString();
+            double newRes = Double.parseDouble(stRes);
+            newRes += newNum;
+
+            if (newNum > 100) {
+                Toast.makeText(this, "No se puede más de 100", Toast.LENGTH_SHORT).show();
+            } else {
+                result.setText("" + newRes);
+            }
+        }
+
+    }
+
+    public void substractNumber(View v) {
+        if (TextUtils.isEmpty(editNum.getText().toString())) {
+            Toast.makeText(MainActivity.this,
+                    "Es necesario introducir un numero",
+                    Toast.LENGTH_SHORT).show();
+        } else {
+            String stNum = editNum.getText().toString();
+            double newNum = Double.parseDouble(stNum);
+
+            String stRes = result.getText().toString();
+            double newRes = Double.parseDouble(stRes);
+            newRes -= newNum;
+
+            if (newNum > 100) {
+                Toast.makeText(this, "No se puede más de 100", Toast.LENGTH_SHORT).show();
+            } else if (newRes < 0) {
+                Toast.makeText(this, "El resultado es un numero negativo", Toast.LENGTH_SHORT).show();
+            } else {
+                result.setText("" + newRes);
+            }
         }
 
 
     }
 
-    public void hideSubstract(View v){
+    public void hideSubstract(View v) {
 
 
         if (negaCountCheck.isChecked()) {
@@ -123,9 +113,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void showAdditionalButtons(View v){
+    public void showAdditionalButtons(View v) {
 
-        if(onOffButtons.isChecked()){
+        if (onOffButtons.isChecked()) {
             Toast.makeText(this, "Se han mostrado opciones adicionales", Toast.LENGTH_SHORT).show();
             resetButton.setVisibility(View.VISIBLE);
             negaCountCheck.setVisibility(View.VISIBLE);
@@ -136,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void resetNumbers(View v){
+    public void resetNumbers(View v) {
         result.setText(" ");
         editNum.setText(" ");
     }
