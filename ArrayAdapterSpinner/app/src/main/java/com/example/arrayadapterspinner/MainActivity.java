@@ -25,16 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void initialize(){
         fruits = (ImageView) findViewById(R.id.imgFruits);
-        apple = (ImageView) findViewById(R.id.imgApple);
-        avocado = (ImageView) findViewById(R.id.imgAvocado);
-        cherry = (ImageView) findViewById(R.id.imgCherry);
 
-        fruits.setVisibility(View.GONE);
-        apple.setVisibility(View.GONE);
-        avocado.setVisibility(View.GONE);
-        cherry.setVisibility(View.GONE);
-
-        String[] frutas ={"Seleccione","fruta","manzana","avocado","cereza"};
+        String[] frutas ={"Seleccione","fruta","manzana","aguacate","cereza"};
 
         sFrutas = (Spinner) findViewById(R.id.spinFrutas);
 
@@ -47,32 +39,26 @@ public class MainActivity extends AppCompatActivity {
     public void showPicture(View v){
 
         String selectedOption = sFrutas.getSelectedItem().toString();
-        String selectedPosition = String.valueOf(sFrutas.getSelectedItem());
+        String selectedPosition = String.valueOf(sFrutas.getSelectedItemId());
 
-        if (selectedOption.equals("fruta")){
-            fruits.setVisibility(View.VISIBLE);
-        } else {
-            fruits.setVisibility(View.GONE);
+        switch (sFrutas.getSelectedItem().toString()){
+
+            case "fruta":
+                fruits.setImageResource(R.drawable.fruta);
+                Toast.makeText(this, "Cargando " + selectedOption + "("+ selectedPosition +")", Toast.LENGTH_SHORT).show();
+                break;
+            case "manzana":
+                fruits.setImageResource(R.drawable.apple);
+                Toast.makeText(this, "Cargando " + selectedOption + "("+ selectedPosition+")", Toast.LENGTH_SHORT).show();
+                break;
+            case "aguacate":
+                fruits.setImageResource(R.drawable.avocado);
+                Toast.makeText(this, "Cargando " + selectedOption + "("+ selectedPosition+")", Toast.LENGTH_SHORT).show();
+                break;
+            case "cereza":
+                fruits.setImageResource(R.drawable.cherry);
+                Toast.makeText(this, "Cargando " + selectedOption + "("+ selectedPosition+")", Toast.LENGTH_SHORT).show();
+                break;
         }
-
-        if (selectedOption.equals("manzana")){
-            apple.setVisibility(View.VISIBLE);
-        }else {
-            apple.setVisibility(View.GONE);
-        }
-
-        if (selectedOption.equals("avocado")){
-            avocado.setVisibility(View.VISIBLE);
-        }else {
-            avocado.setVisibility(View.GONE);
-        }
-
-        if (selectedOption.equals("cereza")){
-            cherry.setVisibility(View.VISIBLE);
-        }else {
-            cherry.setVisibility(View.GONE);
-        }
-
-        Toast.makeText(this, selectedPosition + " " + selectedOption, Toast.LENGTH_SHORT).show();
     }
 }
