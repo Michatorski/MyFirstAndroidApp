@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Unidad2c_Ejercicio2_Formulario</string>
+
+    <string name="Important2">(*)</string>
+    <string name="Important1">(*)</string>
+    <string name="elige_posicion">Elige posicion</string>
+    <string name="enviar">Enviar</string>
+    <string name="Important3">(*)</string>
+    <string name="Important4">(*)</string>
+    <string name="Important5">(*)</string>
+    <string name="Important6">(*)</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="nombre">Nombre</string>
+    <string name="forma_de_contacto">Forma de Contacto</string>
+    <string name="deporte">Deporte</string>
+    <string name="movil">Móvil</string>
+    <string name="email">Email</string>
 </resources>
