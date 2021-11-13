@@ -6,4 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <TextView
+        android:id="@+id/tvResName_main2"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/tvName_main2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSurname_Main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/apellidos_main2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName_main2" />
+
+    <TextView
+        android:id="@+id/tvName_main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/nombre_main2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResSurname_main2"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toEndOf="@+id/tvSurname_Main2"
+        app:layout_constraintTop_toBottomOf="@+id/tvResName_main2" />
+
+    <TextView
+        android:id="@+id/tvContacto_Main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/contacto_main2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurname_Main2" />
+
+    <TextView
+        android:id="@+id/tvSport_Main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/deporte_main2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContacto_Main2" />
+
+    <TextView
+        android:id="@+id/tvPosition_MaIn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/position_main2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSport_Main2" />
+
+    <TextView
+        android:id="@+id/tvResContacto_Main2"
+        android:layout_width="86dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toEndOf="@+id/tvContacto_Main2"
+        app:layout_constraintTop_toBottomOf="@+id/tvResSurname_main2" />
+
+    <TextView
+        android:id="@+id/tvResSports_Main2"
+        android:layout_width="84dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toEndOf="@+id/tvSport_Main2"
+        app:layout_constraintTop_toBottomOf="@+id/tvResContacto_Main2" />
+
+    <TextView
+        android:id="@+id/tvResPosition_Main2"
+        android:layout_width="95dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toEndOf="@+id/tvPosition_MaIn2"
+        app:layout_constraintTop_toBottomOf="@+id/tvResSports_Main2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

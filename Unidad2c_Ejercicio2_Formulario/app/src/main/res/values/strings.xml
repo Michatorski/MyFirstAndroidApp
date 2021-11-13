@@ -15,4 +15,9 @@
     <string name="deporte">Deporte</string>
     <string name="movil">Móvil</string>
     <string name="email">Email</string>
+    <string name="apellidos_main2">Apellidos:</string>
+    <string name="nombre_main2">Nombre:</string>
+    <string name="contacto_main2">Contacto</string>
+    <string name="deporte_main2">Deporte</string>
+    <string name="position_main2">Position</string>
 </resources>
