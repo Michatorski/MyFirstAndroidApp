@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayAdapter<String> adapter1, adapter2;
 
-    TextView tvEmail, tvMobile, mandatoryMobile, mandatoryEmail;
+    TextView tvEmail, tvMobile,choseText;
     EditText etEmail, etMobile, etName, etSurname;
     RadioButton position1, position2, position3, position4;
 
@@ -45,10 +45,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void initialize() {
 
+        choseText = (TextView) findViewById(R.id.tvChoose);
+
         etName = (EditText) findViewById(R.id.etName);
         etSurname = (EditText) findViewById(R.id.etSurname);
-        etMobile = (EditText) findViewById(R.id.etMovile);
+        etMobile = (EditText) findViewById(R.id.tphoneNum);
         etEmail = (EditText) findViewById(R.id.etEmail);
+
+        tvEmail = (TextView) findViewById(R.id.tvEmail);
+        tvMobile = (TextView) findViewById(R.id.tvMobile);
 
         String[] contactType = {"Selecciona...", "Movil", "E-mail"};
         String[] sport = {"Selecciona...", "Fútbol", "Baloncesto"};
@@ -68,13 +73,13 @@ public class MainActivity extends AppCompatActivity {
         position4 = (RadioButton) findViewById(R.id.rbPosition4);
 
 
-        tvEmail.setVisibility(View.GONE);
-        etEmail.setVisibility(View.GONE);
-        mandatoryEmail.setVisibility(View.GONE);
 
-        tvMobile.setVisibility(View.GONE);
-        etMobile.setVisibility(View.GONE);
-        mandatoryMobile.setVisibility(View.GONE);
+        choseText.setVisibility(View.GONE);
+
+        position1.setVisibility(View.GONE);
+        position2.setVisibility(View.GONE);
+        position3.setVisibility(View.GONE);
+        position4.setVisibility(View.GONE);
 
         adapterContact();
         adapterSport();
@@ -91,21 +96,31 @@ public class MainActivity extends AppCompatActivity {
                         " position: " + position;
                 Toast.makeText(parent.getContext(), res, Toast.LENGTH_SHORT).show();
                 if (selected.equals("Movil")) {
+
                     tvEmail.setVisibility(View.GONE);
                     etEmail.setVisibility(View.GONE);
-                    mandatoryEmail.setVisibility(View.GONE);
+
 
                     tvMobile.setVisibility(View.VISIBLE);
                     etMobile.setVisibility(View.VISIBLE);
-                    mandatoryMobile.setVisibility(View.VISIBLE);
+
                 } else if (selected.equals("E-mail"))  {
+
                     tvEmail.setVisibility(View.VISIBLE);
                     etEmail.setVisibility(View.VISIBLE);
-                    mandatoryEmail.setVisibility(View.VISIBLE);
+
 
                     tvMobile.setVisibility(View.GONE);
                     etMobile.setVisibility(View.GONE);
-                    mandatoryMobile.setVisibility(View.GONE);
+
+                } else {
+                    tvEmail.setVisibility(View.GONE);
+                    etEmail.setVisibility(View.GONE);
+
+
+                    tvMobile.setVisibility(View.GONE);
+                    etMobile.setVisibility(View.GONE);
+
                 }
             }
 
@@ -126,11 +141,27 @@ public class MainActivity extends AppCompatActivity {
                         " position: " + position;
                 Toast.makeText(parent.getContext(), res, Toast.LENGTH_SHORT).show();
                 if (selected.equals("Fútbol")){
+                    choseText.setVisibility(View.VISIBLE);
+
+                    position1.setVisibility(View.VISIBLE);
+                    position2.setVisibility(View.VISIBLE);
+                    position3.setVisibility(View.VISIBLE);
+                    position4.setVisibility(View.VISIBLE);
+
                     position1.setText("Portero");
                     position2.setText("Defensa");
                     position3.setText("Medio");
                     position4.setText("Delantero");
+
                 } else if (selected.equals("Baloncesto")){
+
+                    choseText.setVisibility(View.VISIBLE);
+
+                    position1.setVisibility(View.VISIBLE);
+                    position2.setVisibility(View.VISIBLE);
+                    position3.setVisibility(View.VISIBLE);
+                    position4.setVisibility(View.VISIBLE);
+
                     position1.setText("Base");
                     position2.setText("Escolta");
                     position3.setText("Alero");
