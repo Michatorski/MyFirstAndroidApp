@@ -198,5 +198,6 @@ public class MainActivity extends AppCompatActivity {
         if (position4.isChecked()){
             intent.putExtra(POSITION, position4.toString());
         }
+        startActivity(intent);
     }
 }
