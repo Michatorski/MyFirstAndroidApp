@@ -180,23 +180,23 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, MainActivity2.class);
 
-        intent.putExtra(NAME, etName.toString());
-        intent.putExtra(SURNAME, etSurname.toString());
-        intent.putExtra(MOBILE, etMobile.toString());
-        intent.putExtra(EMAIL, etEmail.toString());
+        intent.putExtra(NAME, etName.getText().toString());
+        intent.putExtra(SURNAME, etSurname.getText().toString());
+        intent.putExtra(MOBILE, etMobile.getText().toString());
+        intent.putExtra(EMAIL, etEmail.getText().toString());
         intent.putExtra(SPORT, spinSports.getSelectedItem().toString());
 
         if (position1.isChecked()){
-            intent.putExtra(POSITION, position1.toString());
+            intent.putExtra(POSITION, position1.getText().toString());
         }
         if (position2.isChecked()){
-            intent.putExtra(POSITION, position2.toString());
+            intent.putExtra(POSITION, position2.getText().toString());
         }
         if (position3.isChecked()){
-            intent.putExtra(POSITION, position3.toString());
+            intent.putExtra(POSITION, position3.getText().toString());
         }
         if (position4.isChecked()){
-            intent.putExtra(POSITION, position4.toString());
+            intent.putExtra(POSITION, position4.getText().toString());
         }
         startActivity(intent);
     }
