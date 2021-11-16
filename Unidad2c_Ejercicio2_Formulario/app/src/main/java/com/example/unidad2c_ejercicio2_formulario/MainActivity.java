@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvEmail, tvMobile,choseText;
     EditText etEmail, etMobile, etName, etSurname;
     RadioButton position1, position2, position3, position4;
-
+    RadioGroup radioGroup;
 
 
     @Override
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         position3 = (RadioButton) findViewById(R.id.rbPosition3);
         position4 = (RadioButton) findViewById(R.id.rbPosition4);
 
-
+        radioGroup = (RadioGroup) findViewById(R.id.groupPositions);
 
         choseText.setVisibility(View.GONE);
 
@@ -179,25 +179,35 @@ public class MainActivity extends AppCompatActivity {
     public void sendInfo(View v){
 
         Intent intent = new Intent(this, MainActivity2.class);
+//
+//        if( etName.getText().toString().isEmpty() ||etSurname.getText().toString().isEmpty()
+//                || etEmail.getText().toString().isEmpty() || etMobile.getText().toString().isEmpty()
+//                || spinContacts.getSelectedItem().toString().isEmpty() || spinSports.getSelectedItem().toString().isEmpty()){
+//            Toast.makeText(this, "Hay que rellenar todos los huecos", Toast.LENGTH_SHORT).show();
+//
+//        } else {
 
-        intent.putExtra(NAME, etName.getText().toString());
-        intent.putExtra(SURNAME, etSurname.getText().toString());
-        intent.putExtra(MOBILE, etMobile.getText().toString());
-        intent.putExtra(EMAIL, etEmail.getText().toString());
-        intent.putExtra(SPORT, spinSports.getSelectedItem().toString());
+            intent.putExtra(NAME, etName.getText().toString());
+            intent.putExtra(SURNAME, etSurname.getText().toString());
+            intent.putExtra(MOBILE, etMobile.getText().toString());
+            intent.putExtra(EMAIL, etEmail.getText().toString());
+            intent.putExtra(SPORT, spinSports.getSelectedItem().toString());
 
-        if (position1.isChecked()){
-            intent.putExtra(POSITION, position1.getText().toString());
-        }
-        if (position2.isChecked()){
-            intent.putExtra(POSITION, position2.getText().toString());
-        }
-        if (position3.isChecked()){
-            intent.putExtra(POSITION, position3.getText().toString());
-        }
-        if (position4.isChecked()){
-            intent.putExtra(POSITION, position4.getText().toString());
-        }
-        startActivity(intent);
+            if (position1.isChecked()){
+                intent.putExtra(POSITION, position1.getText().toString());
+            }
+            if (position2.isChecked()){
+                intent.putExtra(POSITION, position2.getText().toString());
+            }
+            if (position3.isChecked()){
+                intent.putExtra(POSITION, position3.getText().toString());
+            }
+            if (position4.isChecked()){
+                intent.putExtra(POSITION, position4.getText().toString());
+            }
+            startActivity(intent);
+//        }
+
+
     }
 }
