@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayAdapter<String> adapter1, adapter2;
 
-    TextView tvEmail, tvMobile,choseText;
+    TextView tvEmail, tvMobile, choseText;
     EditText etEmail, etMobile, etName, etSurname;
     RadioButton position1, position2, position3, position4;
     RadioGroup radioGroup;
@@ -91,10 +91,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
                 String selected = parent.getSelectedItem().toString();
-                String selectedByPosition = parent.getItemAtPosition(position).toString();
-                String res = "Selected: " + selected + " SelectedByPosition: " + selectedByPosition +
-                        " position: " + position;
-                Toast.makeText(parent.getContext(), res, Toast.LENGTH_SHORT).show();
+//                String selectedByPosition = parent.getItemAtPosition(position).toString();
+//                String res = "Selected: " + selected + " SelectedByPosition: " + selectedByPosition +
+//                        " position: " + position;
+                Toast.makeText(parent.getContext(), selected, Toast.LENGTH_SHORT).show();
                 if (selected.equals("Movil")) {
 
                     tvEmail.setVisibility(View.GONE);
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     tvMobile.setVisibility(View.VISIBLE);
                     etMobile.setVisibility(View.VISIBLE);
 
-                } else if (selected.equals("E-mail"))  {
+                } else if (selected.equals("E-mail")) {
 
                     tvEmail.setVisibility(View.VISIBLE);
                     etEmail.setVisibility(View.VISIBLE);
@@ -131,16 +131,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void adapterSport(){
+    public void adapterSport() {
         spinSports.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
                 String selected = parent.getSelectedItem().toString();
-                String selectedByPosition = parent.getItemAtPosition(position).toString();
-                String res = "Selected: " + selected + " SelectedByPosition: " + selectedByPosition +
-                        " position: " + position;
-                Toast.makeText(parent.getContext(), res, Toast.LENGTH_SHORT).show();
-                if (selected.equals("Fútbol")){
+//                String selectedByPosition = parent.getItemAtPosition(position).toString();
+//                String res = "Selected: " + selected + " SelectedByPosition: " + selectedByPosition +
+//                        " position: " + position;
+                Toast.makeText(parent.getContext(), selected, Toast.LENGTH_SHORT).show();
+                if (selected.equals("Fútbol")) {
                     choseText.setVisibility(View.VISIBLE);
 
                     position1.setVisibility(View.VISIBLE);
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                     position3.setText("Medio");
                     position4.setText("Delantero");
 
-                } else if (selected.equals("Baloncesto")){
+                } else if (selected.equals("Baloncesto")) {
 
                     choseText.setVisibility(View.VISIBLE);
 
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void sendInfo(View v){
+    public void sendInfo(View v) {
 
         Intent intent = new Intent(this, MainActivity2.class);
 //
@@ -187,25 +187,23 @@ public class MainActivity extends AppCompatActivity {
 //
 //        } else {
 
-            intent.putExtra(NAME, etName.getText().toString());
-            intent.putExtra(SURNAME, etSurname.getText().toString());
-            intent.putExtra(MOBILE, etMobile.getText().toString());
-            intent.putExtra(EMAIL, etEmail.getText().toString());
-            intent.putExtra(SPORT, spinSports.getSelectedItem().toString());
+        intent.putExtra(NAME, etName.getText().toString());
+        intent.putExtra(SURNAME, etSurname.getText().toString());
+        intent.putExtra(MOBILE, etMobile.getText().toString());
+        intent.putExtra(EMAIL, etEmail.getText().toString());
+        intent.putExtra(SPORT, spinSports.getSelectedItem().toString());
 
-            if (position1.isChecked()){
-                intent.putExtra(POSITION, position1.getText().toString());
-            }
-            if (position2.isChecked()){
-                intent.putExtra(POSITION, position2.getText().toString());
-            }
-            if (position3.isChecked()){
-                intent.putExtra(POSITION, position3.getText().toString());
-            }
-            if (position4.isChecked()){
-                intent.putExtra(POSITION, position4.getText().toString());
-            }
-            startActivity(intent);
+
+        if (position1.isChecked()) {
+            intent.putExtra(POSITION, position1.getText().toString());
+        } else if (position2.isChecked()) {
+            intent.putExtra(POSITION, position2.getText().toString());
+        } else if (position3.isChecked()) {
+            intent.putExtra(POSITION, position3.getText().toString());
+        } else if (position4.isChecked()) {
+            intent.putExtra(POSITION, position4.getText().toString());
+        }
+        startActivity(intent);
 //        }
 
 

@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/tvResName_main2"
-        android:layout_width="80dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="18dp"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toEndOf="@+id/tvName_main2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/tvResSurname_main2"
-        android:layout_width="82dp"
-        android:layout_height="21dp"
+        android:layout_width="202dp"
+        android:layout_height="26dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="22dp"
         app:layout_constraintStart_toEndOf="@+id/tvSurname_Main2"
@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="36dp"
         android:text="@string/contacto_main2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSurname_Main2" />
@@ -58,8 +58,8 @@
         android:id="@+id/tvSport_Main2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:text="@string/deporte_main2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvContacto_Main2" />
@@ -69,35 +69,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="36dp"
         android:text="@string/position_main2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSport_Main2" />
 
     <TextView
         android:id="@+id/tvResContacto_Main2"
-        android:layout_width="86dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="17dp"
+        android:layout_width="220dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/tvContacto_Main2"
         app:layout_constraintTop_toBottomOf="@+id/tvResSurname_main2" />
 
     <TextView
         android:id="@+id/tvResSports_Main2"
-        android:layout_width="84dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="21dp"
+        android:layout_width="176dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toEndOf="@+id/tvSport_Main2"
         app:layout_constraintTop_toBottomOf="@+id/tvResContacto_Main2" />
 
     <TextView
         android:id="@+id/tvResPosition_Main2"
-        android:layout_width="95dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="26dp"
+        android:layout_width="165dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toEndOf="@+id/tvPosition_MaIn2"
         app:layout_constraintTop_toBottomOf="@+id/tvResSports_Main2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

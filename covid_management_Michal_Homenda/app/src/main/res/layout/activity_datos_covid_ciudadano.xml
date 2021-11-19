@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosCovidCiudadano">
+
+    <TextView
+        android:id="@+id/tvTitleCovid"
+        android:layout_width="184dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="¿Esta usted  vacunado con la pauta completa de la vacunacion de la COVID?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sYesNo"
+        android:layout_width="173dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVaccine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:text="Vacuna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleCovid" />
+
+    <RadioGroup
+        android:id="@+id/rgVaccines"
+        android:layout_width="248dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbAstra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Astrazeneca" />
+
+        <RadioButton
+            android:id="@+id/rbPzfier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pzfier" />
+
+        <RadioButton
+            android:id="@+id/rbOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otra" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSendNewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="292dp"
+        android:onClick="sendInfo"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

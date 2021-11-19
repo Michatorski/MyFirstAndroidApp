@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/Unidad2c_Ejercicio2_Formulario/app/src/main/res/layout/activity_main.xml" value="0.536" />
-        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/Unidad2c_Ejercicio2_Formulario/app/src/main/res/layout/activity_main2.xml" value="0.536" />
+        <entry key="app/src/main/res/layout/activity_datos_covid_ciudadano.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_datos_enviados.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_datos_personales.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.5" />
       </map>
     </option>
   </component>
