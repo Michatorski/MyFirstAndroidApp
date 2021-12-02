@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
         lv_sistemas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String selectedOption = adapterView.getSelectedItem().toString();
+            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+                String selectedOption = parent.getSelectedItem().toString();
 
                 switch (i) {
                     case 0:
                         txtOS.setText(selectedOption);
-                        Toast.makeText(this, "Has seleccionado " + selectedOption, Toast.LENGTH_SHORT).show();
+                        Toast.makeText( parent, "Has seleccionado " + selectedOption, Toast.LENGTH_SHORT).show();
                         break;
                 }
             }
