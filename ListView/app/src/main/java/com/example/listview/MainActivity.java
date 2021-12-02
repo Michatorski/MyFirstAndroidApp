@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView txtOS;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         txtOS = (TextView) findViewById(R.id.tvOS);
 
         ListView lv_sistemas = (ListView) findViewById(R.id.lv_OsList);
+
         String[] lista_Os = {"Windows", "Linux", "iOS", "Others"};
 
         ArrayAdapter aa_Frutas = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lista_Os);
@@ -38,11 +40,13 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                 String selectedOption = parent.getSelectedItem().toString();
 
-                switch (i) {
+                txtOS.setText(selectedOption);
+                Toast.makeText( parent.getContext(), "Has seleccionado " + selectedOption, Toast.LENGTH_SHORT).show();
+
+
+                switch (i){
                     case 0:
-                        txtOS.setText(selectedOption);
-                        Toast.makeText( parent, "Has seleccionado " + selectedOption, Toast.LENGTH_SHORT).show();
-                        break;
+
                 }
             }
         });
