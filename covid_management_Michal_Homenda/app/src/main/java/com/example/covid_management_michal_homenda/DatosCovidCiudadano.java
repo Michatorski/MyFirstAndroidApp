@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.RadioButton;
@@ -50,10 +49,7 @@ public class DatosCovidCiudadano extends AppCompatActivity {
          spinerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, spinner);
          yesNo.setAdapter(spinerAdapter);
 
-        Intent intentMain = getIntent();
-        name = intentMain.getStringExtra(MainActivity.PERSONAL_NAME);
-        surname = intentMain.getStringExtra(MainActivity.PERSONAL_SURNAME);
-        dni = intentMain.getStringExtra(MainActivity.PERSONAL_DNI);
+
 
 
 
@@ -84,6 +80,8 @@ public class DatosCovidCiudadano extends AppCompatActivity {
     }
 
     public void sendInfo(View v){
+        getData();
+
         Intent intent = new Intent(this, DatosEnviados.class);
 
         intent.putExtra(MainActivity.PERSONAL_DNI, dni);
@@ -97,17 +95,17 @@ public class DatosCovidCiudadano extends AppCompatActivity {
 
             if (Astra.isChecked()){
                 intent.putExtra(COVID_VACCINE, Astra.getText().toString());
-                startActivity(intent);
+
             } else if (Pzifer.isChecked()){
                 intent.putExtra(COVID_VACCINE, Pzifer.getText().toString());
-                startActivity(intent);
+
             } else if (Other.isChecked()){
                 intent.putExtra(COVID_VACCINE, Other.getText().toString());
-                startActivity(intent);
+
             } else {
                 Toast.makeText(this, "Debes escoger una vacuna", Toast.LENGTH_SHORT).show();
             }
-
+            startActivity(intent);
 
 
         } else if (yesNo.getSelectedItem().equals("No")) {
@@ -118,6 +116,12 @@ public class DatosCovidCiudadano extends AppCompatActivity {
             Toast.makeText(this, "Debes decir si has sido vacunado o no", Toast.LENGTH_SHORT).show();
         }
 
+    }
 
+    public  void getData(){
+        Intent intentMain = getIntent();
+        name = intentMain.getStringExtra(MainActivity.PERSONAL_NAME);
+        surname = intentMain.getStringExtra(MainActivity.PERSONAL_SURNAME);
+        dni = intentMain.getStringExtra(MainActivity.PERSONAL_DNI);
     }
 }

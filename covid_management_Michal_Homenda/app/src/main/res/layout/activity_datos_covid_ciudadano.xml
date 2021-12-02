@@ -10,7 +10,7 @@
         android:id="@+id/tvTitleCovid"
         android:layout_width="184dp"
         android:layout_height="64dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         android:text="¿Esta usted  vacunado con la pauta completa de la vacunacion de la COVID?"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,29 +18,19 @@
 
     <Spinner
         android:id="@+id/sYesNo"
-        android:layout_width="173dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="242dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="84dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvVaccine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="96dp"
-        android:text="Vacuna"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitleCovid" />
 
     <RadioGroup
         android:id="@+id/rgVaccines"
         android:layout_width="248dp"
         android:layout_height="39dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="92dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -65,12 +55,22 @@
 
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/tvVaccine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="228dp"
+        android:text="Vacuna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleCovid" />
+
     <Button
         android:id="@+id/btnSendNewInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="156dp"
         android:onClick="sendInfo"
         android:text="Enviar"
         app:layout_constraintBottom_toBottomOf="parent"
