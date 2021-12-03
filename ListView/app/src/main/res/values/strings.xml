@@ -7,4 +7,5 @@
     <string name="ubuntu">Ubuntu</string>
     <string name="others">Others</string>
     <string name="redhat">RedHat</string>
+    <string name="Nombre_Other_OS">Escribe el nomre del sistema operativo</string>
 </resources>
