@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">ListView</string>
     <string name="enviar">enviar</string>
+    <string name="windows7">Windows7</string>
+    <string name="windows11">Windows11</string>
+    <string name="windows10">Windows10</string>
+    <string name="ubuntu">Ubuntu</string>
+    <string name="others">Others</string>
+    <string name="redhat">RedHat</string>
 </resources>
