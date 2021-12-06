@@ -8,4 +8,6 @@
     <string name="others">Others</string>
     <string name="redhat">RedHat</string>
     <string name="Nombre_Other_OS">Escribe el nomre del sistema operativo</string>
+    <string name="sistemaoperativo">SistemaOperativo:</string>
+    <string name="tipo">Tipo:</string>
 </resources>
