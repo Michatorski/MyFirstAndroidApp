@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     protected static final String OPERATIVE_SYSTEM = "";
     protected static final String OPERATIVE_SYSTEM_TYPE = "";
-    protected static final String OPERATIVE_SYSTEM_OTHERS = "";
 
     TextView txtOS;
 
@@ -112,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity2.class);
 
 
-        intent.putExtra(OPERATIVE_SYSTEM,selectedOption );
+        intent.putExtra(OPERATIVE_SYSTEM, selectedOption);
 
         if (operativeSystem1.isChecked()) {
             intent.putExtra(OPERATIVE_SYSTEM_TYPE, operativeSystem1.getText().toString());
@@ -120,6 +119,12 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(OPERATIVE_SYSTEM_TYPE, operativeSystem2.getText().toString());
         } else if (operativeSystem3.isChecked()) {
             intent.putExtra(OPERATIVE_SYSTEM_TYPE, operativeSystem3.getText().toString());
+        } else if (selectedOption.contains("Others")) {
+            if(nameOtherOs.getText().toString().isEmpty()){
+                Toast.makeText(this, "Rellena el nombre del sistema operativo", Toast.LENGTH_SHORT).show();
+            } else {
+                intent.putExtra(OPERATIVE_SYSTEM_TYPE, nameOtherOs.getText().toString());
+            }
         } else {
             Toast.makeText(this, "Hay que escoger un tipo", Toast.LENGTH_SHORT).show();
         }
