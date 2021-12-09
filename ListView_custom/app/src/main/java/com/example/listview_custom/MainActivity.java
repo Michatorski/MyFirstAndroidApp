@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -15,8 +16,11 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     protected final static String LIST_GRAPHIC_CARD = "";
+//    protected final static String COUNT_GRAPHIC_CARD = "";
 
     ListView lv_sistemas;
+
+TextView resu;
 
     String selectedOption;
 
@@ -31,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        resu = (TextView) findViewById(R.id.tv_Test);
+
         ArrayAdapter aa_OperativeSystems = new ArrayAdapter(this, R.layout.list_view_custom, R.id.tv_Aux, aux_Os);
 
         lv_sistemas = (ListView) findViewById(R.id.lv_sistemas);
@@ -44,10 +50,12 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(parent.getContext(), "Has seleccionado " + selectedOption, Toast.LENGTH_SHORT).show();
 
-//                int count = cart[i];
+                fullCart.add(selectedOption + ":" +cart[i]++ );
 
-                fullCart.add(selectedOption + ":" + cart[i]++);
-
+                if (fullCart.contains(selectedOption)){
+                    cart[i]++;
+                }
+                resu.setText(fullCart.toString());
             }
         });
     }
@@ -55,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     public void send (View v){
         Intent intent = new Intent(this, MainActivity2.class);
 
-        intent.getStringExtra(LIST_GRAPHIC_CARD, fullCart.add());
+        intent.putExtra(LIST_GRAPHIC_CARD, fullCart.toString());
         startActivity(intent);
     }
 }
