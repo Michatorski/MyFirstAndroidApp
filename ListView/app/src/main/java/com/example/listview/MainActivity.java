@@ -108,6 +108,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendInfo(View v) {
+
+        if(){
+
+        }
         Intent intent = new Intent(this, MainActivity2.class);
 
 
