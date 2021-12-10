@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     protected final static String LIST_GRAPHIC_CARD = "";
-//    protected final static String COUNT_GRAPHIC_CARD = "";
+
 
     ListView lv_sistemas;
 
@@ -25,8 +25,6 @@ TextView resu;
     String selectedOption;
 
     String[] aux_Os = {"Geforce RTX3090", "MSI AMD Radeon X 6800", "Geforce RTX3060"};
-
-    int[] cart = {1,1,1};
 
     ArrayList fullCart = new ArrayList<String>();
 
@@ -50,11 +48,8 @@ TextView resu;
 
                 Toast.makeText(parent.getContext(), "Has seleccionado " + selectedOption, Toast.LENGTH_SHORT).show();
 
-                fullCart.add(selectedOption + ":" +cart[i]++ );
+                fullCart.add(selectedOption +"\n" );
 
-                if (fullCart.contains(selectedOption)){
-                    cart[i]++;
-                }
                 resu.setText(fullCart.toString());
             }
         });
