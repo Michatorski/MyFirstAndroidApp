@@ -17,10 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     protected final static String LIST_GRAPHIC_CARD = "";
 
-
     ListView lv_sistemas;
 
-TextView resu;
+    TextView resu;
 
     String selectedOption;
 
@@ -33,6 +32,11 @@ TextView resu;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initialize();
+
+    }
+
+    public void initialize() {
         resu = (TextView) findViewById(R.id.tv_Test);
 
         ArrayAdapter aa_OperativeSystems = new ArrayAdapter(this, R.layout.list_view_custom, R.id.tv_Aux, aux_Os);
@@ -48,17 +52,18 @@ TextView resu;
 
                 Toast.makeText(parent.getContext(), "Has seleccionado " + selectedOption, Toast.LENGTH_SHORT).show();
 
-                fullCart.add(selectedOption +"\n" );
+                fullCart.add(selectedOption);
 
                 resu.setText(fullCart.toString());
             }
         });
     }
 
-    public void send (View v){
+    public void send(View v) {
         Intent intent = new Intent(this, MainActivity2.class);
 
         intent.putExtra(LIST_GRAPHIC_CARD, fullCart);
+
         startActivity(intent);
     }
 }
