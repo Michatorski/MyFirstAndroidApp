@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
     String selectedOption;
 
+    String[] lista_Os = {"Windows", "Linux", "iOS", "Others"};
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void listOnClick() {
-        String[] lista_Os = {"Windows", "Linux", "iOS", "Others"};
+
 
         ArrayAdapter aa_OperativeSystems = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lista_Os);
 
@@ -98,40 +102,59 @@ public class MainActivity extends AppCompatActivity {
                         operativeSystem2.setText("macOS 11 Big Sur");
                         operativeSystem3.setText("macOS 12 Monterey");
                         break;
-                    case "Others":
-                        nameOtherOs.setVisibility(View.VISIBLE);
-                        osTypes.setVisibility(View.GONE);
-                        break;
+
                 }
             }
         });
+
+
     }
+
+    public String selectOSType(){
+        String selectedTypeOS = null;
+
+        if (operativeSystem1.isChecked()){
+            selectedTypeOS = operativeSystem1.getText().toString();
+        } else if (operativeSystem2.isChecked()){
+            selectedTypeOS = operativeSystem2.getText().toString();
+        } else if (operativeSystem3.isChecked()){
+            selectedTypeOS = operativeSystem3.getText().toString();
+        }
+
+        return selectedTypeOS;
+    }
+
 
     public void sendInfo(View v) {
 
-        Intent intent = new Intent(this, MainActivity2.class);
+        String typeOS = selectOSType();
 
+        if (selectedOption.isEmpty()) {
+            Toast.makeText(this, "Hay que escoger un OS", Toast.LENGTH_SHORT).show();
 
-        intent.putExtra(OPERATIVE_SYSTEM, selectedOption);
-
-        if (operativeSystem1.isChecked()) {
-            intent.putExtra(OPERATIVE_SYSTEM_TYPE, operativeSystem1.getText().toString());
-        } else if (operativeSystem2.isChecked()) {
-            intent.putExtra(OPERATIVE_SYSTEM_TYPE, operativeSystem2.getText().toString());
-        } else if (operativeSystem3.isChecked()) {
-            intent.putExtra(OPERATIVE_SYSTEM_TYPE, operativeSystem3.getText().toString());
-        } else if (selectedOption.contains("Others")) {
-            if(nameOtherOs.getText().toString().isEmpty()){
-                Toast.makeText(this, "Rellena el nombre del sistema operativo", Toast.LENGTH_SHORT).show();
-            } else {
-                intent.putExtra(OPERATIVE_SYSTEM_TYPE, nameOtherOs.getText().toString());
-            }
         } else {
-            Toast.makeText(this, "Hay que escoger un tipo", Toast.LENGTH_SHORT).show();
+
+            if (typeOS.isEmpty()){
+                Toast.makeText(this, "Hay que escoger tipo", Toast.LENGTH_SHORT).show();
+            } else {
+                Intent intent = new Intent(this, MainActivity2.class);
+
+                intent.putExtra(OPERATIVE_SYSTEM, selectedOption);
+
+                intent.putExtra(OPERATIVE_SYSTEM_TYPE, typeOS);
+
+                startActivity(intent);
+
+            }
         }
-
-
-        startActivity(intent);
-
     }
 }
+
+//            } else if (selectedOption.contains("Others")) {
+//                if (nameOtherOs.getText().toString().isEmpty()) {
+//                    Toast.makeText(this, "Rellena el nombre del sistema operativo", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    intent.putExtra(OPERATIVE_SYSTEM_TYPE, nameOtherOs.getText().toString());
+//                }
+
+
