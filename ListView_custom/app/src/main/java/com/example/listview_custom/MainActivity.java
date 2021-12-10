@@ -58,7 +58,7 @@ TextView resu;
     public void send (View v){
         Intent intent = new Intent(this, MainActivity2.class);
 
-        intent.putExtra(LIST_GRAPHIC_CARD, fullCart.toString());
+        intent.putExtra(LIST_GRAPHIC_CARD, fullCart);
         startActivity(intent);
     }
 }
