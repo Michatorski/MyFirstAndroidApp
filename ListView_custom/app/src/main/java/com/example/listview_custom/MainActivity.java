@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected final static String LIST_GRAPHIC_CARD = "";
+    protected final static String LIST_GRAPHIC_CARD = "com.example.listview_custom";
 
     ListView lv_sistemas;
 
