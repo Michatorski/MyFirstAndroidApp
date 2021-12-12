@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected static final String OPERATIVE_SYSTEM = "";
-    protected static final String OPERATIVE_SYSTEM_TYPE = "";
+    protected static final String OPERATIVE_SYSTEM = "com.example.listview.os";
+    protected static final String OPERATIVE_SYSTEM_TYPE = "com.example.listview.tos";
 
     TextView txtOS;
 
