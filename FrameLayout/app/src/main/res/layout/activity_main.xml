@@ -18,6 +18,7 @@
         android:layout_width="122dp"
         android:layout_height="120dp"
         android:layout_gravity="bottom|left"
+        android:rotation="90"
         app:srcCompat="@drawable/zen" />
 
     <TextView
