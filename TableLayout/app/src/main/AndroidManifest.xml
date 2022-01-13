@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TableLayout">
         <activity
+            android:name=".EjercicioVII"
+            android:exported="true" />
+        <activity
             android:name=".EjercicioVI"
             android:exported="true" />
         <activity
