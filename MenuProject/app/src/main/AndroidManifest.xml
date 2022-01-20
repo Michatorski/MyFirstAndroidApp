@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuProject">
         <activity
+            android:name=".Exercise2b"
+            android:exported="true" />
+        <activity
+            android:name=".Exercise2"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

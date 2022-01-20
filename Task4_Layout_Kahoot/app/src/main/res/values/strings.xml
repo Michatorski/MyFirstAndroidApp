@@ -6,4 +6,12 @@
     <string name="que_es_el_junit">¿QUE ES EL JUNIT?</string>
     <string name="respuesta_correcta">Respuesta Correcta:</string>
     <string name="respuesta_del_jugador">Respuesta del jugador:</string>
+
+    <string name="omitir">omitir</string>
+    <string name="java_development_kit">Java development kit</string>
+    <string name="repuesta1">Open source framework, usando para escribir y ejecutar tests</string>
+    <string name="respuesta3">Open source framework, el cuál traduce bytecode a código binario</string>
+    <string name="respuesta4">Ninguno de los anteriores</string>
+    <string name="fake_timer">fake_timer</string>
+    <string name="img_test_act2">img_test_act2</string>
 </resources>

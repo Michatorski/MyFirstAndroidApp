@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:text="¿QUE ES EL JUNIT?" />
+                android:text="@string/que_es_el_junit" />
         </TableRow>
 
         <TableRow
@@ -42,6 +42,7 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
+                    android:contentDescription="@string/fake_timer"
                     app:srcCompat="@drawable/kahoot_tiempo" />
 
                 <ImageView
@@ -49,7 +50,9 @@
                     android:layout_width="0dp"
                     android:layout_height="200dp"
                     android:layout_weight="4"
-                    app:srcCompat="@drawable/kahoot_actividad2_central" />
+                    android:contentDescription="@string/img_test_act2"
+                    app:srcCompat="@drawable/kahoot_actividad2_central"
+                    tools:ignore="ImageContrastCheck" />
 
                 <Button
                     android:id="@+id/btnSkip"
@@ -61,7 +64,7 @@
                     android:rotation="0"
                     android:rotationX="0"
                     android:rotationY="0"
-                    android:text="omitir"
+                    android:text="@string/omitir"
                     android:textSize="8sp"
                     android:textAllCaps="false"/>
             </LinearLayout>
@@ -78,7 +81,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#CF1212"
-                android:text="Java development kit"
+                android:onClick="sendAnswer"
+                android:text="@string/java_development_kit"
                 android:textAllCaps="false" />
         </TableRow>
 
@@ -93,8 +97,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#EDC038"
-                android:text="Open source framework, usando para escribir y ejecutar tests"
-                android:textAllCaps="false"/>
+                android:onClick="sendAnswer"
+                android:text="@string/repuesta1"
+                android:textAllCaps="false"
+                tools:ignore="TextContrastCheck" />
         </TableRow>
 
         <TableRow
@@ -108,8 +114,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#4CAF50"
-                android:text="Open source framework, el cuál traduce bytecode a código binario"
-                android:textAllCaps="false" />
+                android:onClick="sendAnswer"
+                android:text="@string/respuesta3"
+                android:textAllCaps="false"
+                tools:ignore="TextContrastCheck" />
         </TableRow>
 
         <TableRow
@@ -123,8 +131,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#3491DC"
-                android:text="Ninguno de los anteriores"
-                android:textAllCaps="false"/>
+                android:onClick="sendAnswer"
+                android:text="@string/respuesta4"
+                android:textAllCaps="false"
+                tools:ignore="TextContrastCheck" />
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,14 @@
-package com.example.task4_layout_kahoot;
+package com.example.menuproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity2_A extends AppCompatActivity {
+public class Exercise2b extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_activity2);
+        setContentView(R.layout.activity_exercise2b);
     }
 }

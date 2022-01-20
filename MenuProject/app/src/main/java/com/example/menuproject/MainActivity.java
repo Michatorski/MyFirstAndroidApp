@@ -26,11 +26,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.nuevo:
-                Toast.makeText(this, "has pulsado la opcion NUEVO", Toast.LENGTH_SHORT).show();
+            case R.id.compartir:
+                Toast.makeText(this, "has pulsado la opcion compartir", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.eliminar:
-                Toast.makeText(this, "has pulsado la opcion ELIMINAR", Toast.LENGTH_SHORT).show();
+            case R.id.generepdf:
+                Toast.makeText(this, "has pulsado la opcion generar pdf", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.enviar:
+                Toast.makeText(this, "has pulsado la opcion enviar", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.imprimir:
+                Toast.makeText(this, "has pulsado la opcion imprimir", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.marcarpagado:
+                Toast.makeText(this, "has pulsado la opcion marcado como pagado", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
