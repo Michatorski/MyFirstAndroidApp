@@ -12,14 +12,14 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imgKahoot"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:contentDescription="@string/kahoot_img_mact1"
             app:srcCompat="@drawable/kahoot_actividad1" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/etNickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="90dp"
@@ -31,7 +31,7 @@
             android:importantForAutofill="no" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnPlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="110dp"

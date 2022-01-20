@@ -3,4 +3,7 @@
     <string name="nick_name">Nick</string>
     <string name="iniciar_juego">iniciar juego</string>
     <string name="kahoot_img_mact1">kahoot_img_MAct1</string>
+    <string name="que_es_el_junit">¿QUE ES EL JUNIT?</string>
+    <string name="respuesta_correcta">Respuesta Correcta:</string>
+    <string name="respuesta_del_jugador">Respuesta del jugador:</string>
 </resources>

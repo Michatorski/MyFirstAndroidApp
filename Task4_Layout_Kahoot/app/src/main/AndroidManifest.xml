@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Task4_Layout_Kahoot">
         <activity
+            android:name=".MainActivity3"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity2_A"
             android:exported="true" />
         <activity
