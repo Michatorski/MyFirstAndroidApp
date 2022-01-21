@@ -19,15 +19,18 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        initializa();
+        initialize();
+
     }
 
-    public void initializa() {
+    public void initialize() {
 
         answerA = (Button) findViewById(R.id.btn1);
         answerB = (Button) findViewById(R.id.btn2);
         answerC = (Button) findViewById(R.id.btn3);
         answerD = (Button) findViewById(R.id.btn4);
+
+
 
     }
 
@@ -41,13 +44,13 @@ public class MainActivity2 extends AppCompatActivity {
 
         Intent intent = new Intent(this, MainActivity3.class);
 
-        if (answerA.callOnClick()) {
+        if (answerA.isPressed()) {
             intent.putExtra(CHOSEN_ANSWER, answerA.getText().toString());
-        } else if (answerB.callOnClick()) {
+        } else if (answerB.isPressed()) {
             intent.putExtra(CHOSEN_ANSWER, answerB.getText().toString());
-        } else if (answerC.callOnClick()) {
+        } else if (answerC.isPressed()) {
             intent.putExtra(CHOSEN_ANSWER, answerC.getText().toString());
-        } else if (answerD.callOnClick()) {
+        } else if (answerD.isPressed()) {
             intent.putExtra(CHOSEN_ANSWER, answerD.getText().toString());
         }
         startActivity(intent);
