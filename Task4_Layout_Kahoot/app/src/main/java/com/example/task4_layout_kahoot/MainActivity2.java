@@ -44,6 +44,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         Intent intent = new Intent(this, MainActivity3.class);
 
+        intent.putExtra(MainActivity.NICKNAME, nickname_activity1);
+
         if (answerA.isPressed()) {
             intent.putExtra(CHOSEN_ANSWER, answerA.getText().toString());
         } else if (answerB.isPressed()) {

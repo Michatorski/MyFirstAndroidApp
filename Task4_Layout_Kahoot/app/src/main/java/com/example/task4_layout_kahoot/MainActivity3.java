@@ -16,6 +16,7 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         initialize();
+        getTheResults();
     }
 
     public void initialize(){
@@ -24,8 +25,7 @@ public class MainActivity3 extends AppCompatActivity {
         right = (TextView) findViewById(R.id.tvCorrect);
         textWinOrFail = (TextView) findViewById(R.id.tvWinFail);
 
-        correctAnswerText.setVisibility(View.GONE);
-    wrong.setVisibility(View.GONE);
+
     }
 
     public void getTheResults(){
@@ -36,10 +36,16 @@ public class MainActivity3 extends AppCompatActivity {
 
 
         if(chosenAnswer.equals("Open source framework, usando para escribir y ejecutar tests")){
-            textWinOrFail.setText("Enhorabuena, lo has logrado " + nick);
+            textWinOrFail.setText("Enhorabuena, lo has logrado. " + nick);
             right.setText("Open source framework, usando para escribir y ejecutar tests");
+            correctAnswerText.setVisibility(View.GONE);
+            wrong.setVisibility(View.GONE);
         } else {
-            
+            textWinOrFail.setText("Lo siento, respuesta incorrreta, " + nick);
+            wrong.setText(chosenAnswer);
+            right.setText("Open source framework, usando para escribir y ejecutar tests");
+            correctAnswerText.setVisibility(View.VISIBLE);
+            wrong.setVisibility(View.VISIBLE);
         }
     }
 }
