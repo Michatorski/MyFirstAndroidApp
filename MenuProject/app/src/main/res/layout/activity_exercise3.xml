@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imgManzanaGolden"
-        android:layout_width="187dp"
-        android:layout_height="172dp"
+        android:layout_width="165dp"
+        android:layout_height="161dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/imgManzanaPink"
-        android:layout_width="186dp"
-        android:layout_height="177dp"
+        android:layout_width="167dp"
+        android:layout_height="159dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,30 +28,30 @@
 
     <ImageView
         android:id="@+id/imgPlatano"
-        android:layout_width="231dp"
-        android:layout_height="223dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="66dp"
+        android:layout_width="161dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/platanos" />
 
     <ImageView
         android:id="@+id/imgPearConference"
-        android:layout_width="229dp"
-        android:layout_height="238dp"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="153dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="96dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pear_conference" />
 
     <ImageView
         android:id="@+id/imgPearLimonera"
-        android:layout_width="231dp"
-        android:layout_height="243dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="164dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="92dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pear_limonera" />
