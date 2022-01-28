@@ -14,7 +14,7 @@
         android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/manzana_golden" />
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageView
         android:id="@+id/imgManzanaPink"
@@ -24,7 +24,7 @@
         android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/manzana_pink_lady" />
+        app:srcCompat="@android:drawable/arrow_down_float" />
 
     <ImageView
         android:id="@+id/imgPlatano"
@@ -34,7 +34,7 @@
         android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/platanos" />
+        app:srcCompat="@android:drawable/btn_dropdown" />
 
     <ImageView
         android:id="@+id/imgPearConference"
@@ -44,7 +44,7 @@
         android:layout_marginTop="96dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pear_conference" />
+        app:srcCompat="@android:drawable/btn_plus" />
 
     <ImageView
         android:id="@+id/imgPearLimonera"
@@ -54,5 +54,5 @@
         android:layout_marginTop="92dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pear_limonera" />
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 </androidx.constraintlayout.widget.ConstraintLayout>

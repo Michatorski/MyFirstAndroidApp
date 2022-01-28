@@ -25,6 +25,12 @@ public class Exercise3 extends AppCompatActivity {
         platano = (ImageView) findViewById(R.id.imgPlatano);
         conference = (ImageView) findViewById(R.id.imgPearConference);
         limonera = (ImageView) findViewById(R.id.imgPearLimonera);
+
+        golden.setVisibility(View.GONE);
+        pink.setVisibility(View.GONE);
+        platano.setVisibility(View.GONE);
+        conference.setVisibility(View.GONE);
+        limonera.setVisibility(View.GONE);
     }
 
     @Override
@@ -44,39 +50,36 @@ public class Exercise3 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case 1:
-                return true;
-            case 2:
+
+            case 11:
                 golden.setVisibility(View.VISIBLE);
                 pink.setVisibility(View.GONE);
                 platano.setVisibility(View.GONE);
                 conference.setVisibility(View.GONE);
                 limonera.setVisibility(View.GONE);
                 return true;
-            case 3:
+            case 12:
                 golden.setVisibility(View.GONE);
                 pink.setVisibility(View.VISIBLE);
                 platano.setVisibility(View.GONE);
                 conference.setVisibility(View.GONE);
                 limonera.setVisibility(View.GONE);
                 return true;
-            case 4:
+            case 2:
                 golden.setVisibility(View.GONE);
                 pink.setVisibility(View.GONE);
                 platano.setVisibility(View.VISIBLE);
                 conference.setVisibility(View.GONE);
                 limonera.setVisibility(View.GONE);
                 return true;
-            case 5:
-                return true;
-            case 6:
+            case 31:
                 golden.setVisibility(View.GONE);
                 pink.setVisibility(View.GONE);
                 platano.setVisibility(View.GONE);
                 conference.setVisibility(View.VISIBLE);
                 limonera.setVisibility(View.GONE);
                 return true;
-            case 7:
+            case 32:
                 golden.setVisibility(View.GONE);
                 pink.setVisibility(View.GONE);
                 platano.setVisibility(View.GONE);
@@ -84,6 +87,7 @@ public class Exercise3 extends AppCompatActivity {
                 limonera.setVisibility(View.VISIBLE);
                 return true;
             default:
+
                 return super.onOptionsItemSelected(item);
         }
 
