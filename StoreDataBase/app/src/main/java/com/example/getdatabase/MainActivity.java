@@ -44,19 +44,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initializer();
         adapterInit();
-
-
-        SharedPreferences prefItem = getSharedPreferences("configItem", Context.MODE_PRIVATE);
-
     }
-
 
 
     public void initializer() {
         newItem = (EditText) findViewById(R.id.etNameItem);
-
-
-
         elementList = (ListView) findViewById(R.id.lv_elements);
 
         itemlist = new ArrayList<String>();
@@ -87,11 +79,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sharedPreference(String optionItem){
-        SharedPreferences prefItem = getSharedPreferences("configItem", Context.MODE_PRIVATE);
+        SharedPreferences prefItem = getSharedPreferences(getString(R.string.configItem), Context.MODE_PRIVATE);
         SharedPreferences.Editor editorItem = prefItem.edit();
 
-        editorItem.putString("itemName", optionItem);
-//        String itemName = prefItem.getString("itemName", "Defecto");
+        editorItem.putString(getString(R.string.itemName), optionItem);
         editorItem.commit();
     }
 
@@ -110,18 +101,16 @@ public class MainActivity extends AppCompatActivity {
                 if (!newItem.getText().toString().isEmpty()) {
                     this.itemlist.add(newItem.getText().toString());
                     this.adapter.notifyDataSetChanged();
+                } else {
+                    Random r = new Random();
+                    valueNumber = r.nextInt(999) + 1;
+                    this.itemlist.add(String.valueOf(valueNumber));
+                    this.adapter.notifyDataSetChanged();
                 }
 
-                Random r = new Random();
-                valueNumber = r.nextInt(999) + 1;
-
-                this.itemlist.add(String.valueOf(valueNumber));
-                this.adapter.notifyDataSetChanged();
                 Toast.makeText(this, "Has añadido el elemento", Toast.LENGTH_SHORT).show();
-
                 return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 

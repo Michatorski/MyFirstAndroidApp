@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/layout/activity_main2.xml" value="0.4" />
-        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/layout/activity_main3.xml" value="0.11388888888888889" />
+        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/layout/activity_main3.xml" value="0.536" />
         <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/layout/list_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/menu/menu_add.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/menu/menu_delete.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/menu/menu_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/OmegaKnight/Documents/GitHub/DAM2/AndroidStuff/MyFirstAndroidApp/StoreDataBase/app/src/main/res/menu/menu_previous.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19025641025641027" />
         <entry key="app/src/main/res/layout/item_activity.xml" value="0.1" />
@@ -13,6 +17,9 @@
         <entry key="app/src/main/res/menu/menu_add.xml" value="0.19025641025641027" />
       </map>
     </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_delete.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

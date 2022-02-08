@@ -35,7 +35,7 @@
         android:layout_height="52dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
-        android:text="Escribe aqui para añadir:"
+        android:text="@string/escribe_aqui_para_a_adir"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

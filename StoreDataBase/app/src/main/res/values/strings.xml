@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">GetDataBase</string>
-    <string name="nombre">Nombre:</string>
-    <string name="apellidos">Apellidos:</string>
+    <string name="nombreTitleAct2">Nombre:</string>
+    <string name="apellidosTitleAct2">Apellidos:</string>
     <string name="guardar">Guardar</string>
+
+
+    <string name="itemName">itemName</string>
+    <string name="name">name</string>
+    <string name="surname">surname</string>
+    <string name="age">age</string>
+    <string name="defaultValue">default</string>
+    <string name="configItem">configItem</string>
+
+    <string name="escribe_aqui_para_a_adir">Escribe aqui para añadir:</string>
+    <string name="itemTitleAct3">Item:</string>
+    <string name="nombreTitleAct3">Nombre:</string>
+    <string name="edadTitleAct3">Edad:</string>
+    <string name="surnameTitleAct3">Surname:</string>
+    <string name="edadTitleAct2">Edad:</string>
 </resources>
