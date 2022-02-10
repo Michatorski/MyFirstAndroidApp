@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SharedPreferences_RadomizerGame</string>
+    <string name="adivina_el_numero">¡Adivina el numero!</string>
+    <string name="escoge_un_numero_del_1_al_10">Escoge un numero del 1 al 10.</string>
+    <string name="adivina">Adivina</string>
+</resources>
