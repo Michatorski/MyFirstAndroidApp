@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayAdapter<String> adapter;
 
-    String selectedOption;
-
     EditText newItem;
 
     int valueNumber;
@@ -69,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         elementList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
-                selectedOption = parent.getItemAtPosition(i).toString();
+               String  selectedOption = parent.getItemAtPosition(i).toString();
 
                 sharedPreference(selectedOption);
 
@@ -117,8 +115,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-
-        getMenuInflater().inflate(R.menu.menu_delete, menu);
 
         menu.setHeaderTitle("Opciones:");
 
