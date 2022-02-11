@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void initializer() {
        newItem = (EditText) findViewById(R.id.etNameItem);
+
         Random r = new Random();
          valueNumber = r.nextInt(999)+1;
 
@@ -54,10 +55,6 @@ public class MainActivity extends AppCompatActivity {
         itemlist = new ArrayList<String>();
         itemlist.add("Water");
         itemlist.add("Fire");
-        itemlist.add("Air");
-        itemlist.add("Earth");
-        itemlist.add("Sun");
-        itemlist.add("Moon");
 
         registerForContextMenu(elementList);
 
@@ -97,14 +94,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected( MenuItem item) {
        switch (item.getItemId()){
            case R.id.itAdd:
                if (!newItem.toString().isEmpty()){
                    this.itemlist.add(newItem.toString());
                    this.adapter.notifyDataSetChanged();
                } else {
-                   this.itemlist.add(String.valueOf(valueNumber));
+                   this.itemlist.add("20");
                    this.adapter.notifyDataSetChanged();
                }
                Toast.makeText(this, "Has añadido el elemento", Toast.LENGTH_SHORT).show();
@@ -128,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
+    public boolean onContextItemSelected( MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         switch (item.getItemId()){
             case 1:
