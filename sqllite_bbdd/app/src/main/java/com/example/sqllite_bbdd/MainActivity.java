@@ -2,11 +2,18 @@ package com.example.sqllite_bbdd;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.view.ContentInfo;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.sqllite_bbdd.tables.Comments;
+
+import java.net.CookieHandler;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +40,22 @@ public class MainActivity extends AppCompatActivity {
         database.execSQL(create_comments);
 
         Toast.makeText(this, "Tabla de comentarios creada.", Toast.LENGTH_SHORT).show();
+
+        // Opcion 1: Insert mediante execSQL
+        String insertComments = "INSERT INTO comments (user, comment) VALUES ('admin', 'Adminisitrador del sistema')";
+
+        database.execSQL(insertComments);
+
+        // Opcion 2: Insert medianteValues
+
+        ContentValues insertCommentsV2 = new ContentValues();
+        String userVar = "user";
+
+        Comments comments = new Comments();
+        insertCommentsV2.put(userVar, "usuario");
+        insertCommentsV2.put("comment", "Usuario normal del sistema");
+        database.insert("comments", null, insertCommentsV2);
+        //database.close();
     }
 
     public void crearBD(View view){
