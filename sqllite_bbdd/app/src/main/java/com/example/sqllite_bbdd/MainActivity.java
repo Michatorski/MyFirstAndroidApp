@@ -24,25 +24,27 @@ public class MainActivity extends AppCompatActivity {
 
         //Permite envio de datos personalizados
         //DbHelper dbHelper = new DbHelper(this, "test.db", null, 2);
+        //creo la base de datos
         DbHelper dbHelperLawyer = new DbHelper(this);
         Toast.makeText(this, "Creando la base de datos lawyers.sqlite", Toast.LENGTH_SHORT).show();
-
         SQLiteDatabase database = dbHelperLawyer.getWritableDatabase();
 
+        //Creando tabla
         Toast.makeText(this, "Creando la tabla alumnos...", Toast.LENGTH_SHORT).show();
-
-        String create_alumnos = "CREATE TABLE IF NOT EXISTS alumnos(code INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(50))";
+        String create_alumnos = "CREATE TABLE IF NOT EXISTS alumnos(code INTEGER" +
+                " PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(50))";
         database.execSQL(create_alumnos);
-
         Toast.makeText(this, "Tabla de alumnos creada.", Toast.LENGTH_SHORT).show();
 
-        String create_comments = "CREATE TABLE IF NOT EXISTS comments(_id INTEGER PRIMARY KEY AUTOINCREMENT, user VARCHAR(50), comment VARCHAR(100))";
+        String create_comments = "CREATE TABLE IF NOT EXISTS " +
+                "comments(_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "user VARCHAR(50), comment VARCHAR(100))";
         database.execSQL(create_comments);
-
         Toast.makeText(this, "Tabla de comentarios creada.", Toast.LENGTH_SHORT).show();
 
         // Opcion 1: Insert mediante execSQL
-        String insertComments = "INSERT INTO comments (user, comment) VALUES ('admin', 'Adminisitrador del sistema')";
+        String insertComments = "INSERT INTO comments (user, comment) " +
+                "VALUES ('admin', 'Adminisitrador del sistema')";
 
         database.execSQL(insertComments);
 
@@ -70,6 +72,24 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Introduce un nombre " +
                     "para la base de datos", Toast.LENGTH_SHORT).show();
+        }
+    }
+    
+    public void crearQuery(View view){
+        EditText et_queryName = (EditText) findViewById(R.id.et_queryName);
+        
+        DbHelper sbHelperCustom = new DbHelper(this,  "lawyers.sqlite", null, 1);
+        
+        SQLiteDatabase getDataBase = sbHelperCustom.getWritableDatabase();
+        
+        String newQuery = et_queryName.getText().toString();
+        
+        if (!et_queryName.getText().toString().isEmpty()){
+            getDataBase.execSQL(newQuery);
+
+            Toast.makeText(this, "Query creada", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, "Introduce la query", Toast.LENGTH_SHORT).show();
         }
     }
 }
