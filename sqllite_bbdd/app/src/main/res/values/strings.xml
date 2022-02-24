@@ -3,4 +3,6 @@
     <string name="introduce_nombre_para_base_de_datos">Introduce nombre para base de datos:</string>
     <string name="crear_base_de_datos">Crear base de datos</string>
     <string name="insertar_query">insertar query</string>
+    <string name="nombre_de_la_base_de_datos">Nombre de la base de datos</string>
+    <string name="introduce_la_query">Introduce la query</string>
 </resources>
