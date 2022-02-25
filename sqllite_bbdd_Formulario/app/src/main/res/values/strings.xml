@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">sqllite_bbdd_Formulario</string>
+    <string name="nombre_completo">Nombre Completo:</string>
+    <string name="edad">Edad:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="email">Email:</string>
+    <string name="movil">Movil:</string>
+    <string name="button">Button</string>
+    <string name="dar_de_alta">Dar de Alta</string>
 </resources>

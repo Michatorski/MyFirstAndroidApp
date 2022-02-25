@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         ContentValues insertCommentsV2 = new ContentValues();
         String userVar = "user";
-
-        Comments comments = new Comments();
+//        Comments comments = new Comments();
         insertCommentsV2.put(userVar, "usuario");
         insertCommentsV2.put("comment", "Usuario normal del sistema");
         database.insert("comments", null, insertCommentsV2);
@@ -79,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         EditText et_queryName = (EditText) findViewById(R.id.et_queryName);
         
         DbHelper sbHelperCustom = new DbHelper(this,  "lawyers.sqlite", null, 1);
-        
         SQLiteDatabase getDataBase = sbHelperCustom.getWritableDatabase();
         
         String newQuery = et_queryName.getText().toString();
