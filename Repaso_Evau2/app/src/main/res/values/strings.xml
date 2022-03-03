@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Repaso_Evau2</string>
+    <string name="star_image">star_image</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellido">Apellido</string>
+    <string name="titulo">TITULO</string>
+    <string name="edad">Edad</string>
+    <string name="enviar">Enviar</string>
+    <string name="tituloMain2">Titulo</string>
+    <string name="insertar_datos">Insertar Datos</string>
+    <string name="number_user">Number User:</string>
+    <string name="user">User:</string>
+
+    <string name="name">name</string>
+    <string name="surname">surname</string>
+    <string name="age">age</string>
+    <string name="extra">extra</string>
+    <string name="def">default</string>
+    <string name="volver">Volver</string>
+    <string name="nuevo_extra_info">Nuevo Extra Info:</string>
+
+
+</resources>

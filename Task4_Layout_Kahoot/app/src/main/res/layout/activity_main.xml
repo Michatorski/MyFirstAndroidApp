@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,10 +25,10 @@
             android:layout_marginHorizontal="90dp"
             android:ems="10"
             android:hint="@string/nick_name"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColorHint="#939393"
-            android:importantForAutofill="no" />
+            android:textColorHint="#939393" />
 
         <Button
             android:id="@+id/btnPlay"
@@ -40,4 +40,4 @@
             android:text="@string/iniciar_juego" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
