@@ -56,17 +56,21 @@ public class MainActivity extends AppCompatActivity {
         String getAddress = address.getText().toString();
         String getPhone = phone.getText().toString();
 
-        ContentValues userValues = new ContentValues();
-        
-        userValues.put(Users.UsersEntry.FULL_NAME, getFullName);
-        userValues.put(Users.UsersEntry.AGE, getAge);
-        userValues.put(Users.UsersEntry.EMAIL, getEmail);
-        userValues.put(Users.UsersEntry.ADDRESS, getAddress);
-        userValues.put(Users.UsersEntry.PHONE, getPhone);
         
         if (!(getFullName.isEmpty() && getAge.isEmpty() && getEmail.isEmpty()
                 && getAddress.isEmpty() && getPhone.isEmpty())){
+
+            ContentValues userValues = new ContentValues();
+
+            userValues.put(Users.UsersEntry.FULL_NAME, getFullName);
+            userValues.put(Users.UsersEntry.AGE, getAge);
+            userValues.put(Users.UsersEntry.EMAIL, getEmail);
+            userValues.put(Users.UsersEntry.ADDRESS, getAddress);
+            userValues.put(Users.UsersEntry.PHONE, getPhone);
+
             getDataBase.insert(Users.UsersEntry.TABLE_NAME, null, userValues);
+
+            getDataBase.close();
 
             Toast.makeText(this, "Se han insertado los datos.", Toast.LENGTH_SHORT).show();
         } else {
