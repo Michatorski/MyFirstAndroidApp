@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">medical_appointment_michal_homenda</string>
+
+
+    <string name="shared_day">day</string>
+    <string name="shared_hour">hour</string>
+    <string name="shared_default">default</string>
+
+    <string name="crear_cita">Crear cita</string>
+    <string name="d_a">Día</string>
+    <string name="hora">Hora</string>
+    <string name="guardar_y_continuar">guardar y continuar</string>
+    <string name="modalidad">Modalidad</string>
+
+</resources>

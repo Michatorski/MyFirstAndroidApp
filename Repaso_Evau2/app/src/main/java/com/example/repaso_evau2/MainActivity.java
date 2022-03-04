@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPref = getSharedPreferences("sharedFile", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
 
-        editor.putString("name", name.getText().toString());
+        editor.putString(getString(R.string.name), name.getText().toString());
         editor.putString("surname", surname.getText().toString());
         editor.putString("age", age.getText().toString());
         editor.putString("extra", selectedItem);
